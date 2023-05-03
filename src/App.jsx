@@ -1,10 +1,13 @@
-import { useState } from "react";
 import "./App.css";
 
+/* Components */
+import Navbar from "./components/Navbar";
+import MenuBox from "./components/MenuBox";
 function App() {
   return (
     <div className="App">
-      <h1>Teste</h1>
+      <Navbar />
+      <MenuBox />
     </div>
   );
 }

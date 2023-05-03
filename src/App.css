@@ -1,42 +1,92 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: aqua;
+}
+
+/* .navbar-toggler {
+  padding: 0;
+} */
+
+.navbar-toggler-icon {
+  background-image: url("/src/assets/images/12_asadas12221.jpg") !important;
+}
+
+/* MENU */
+
+body {
+  background-color: #222327;
+}
+
+.menuSelect {
+  display: flex;
+  align-items: center;
+  gap: 15vw;
+  color: white;
+}
+
+.menu {
+  position: relative;
+  top: 10vh;
+  left: -35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s;
+}
+
+.menu.active {
+  top: 25vh;
+  left: -63vh;
+}
+
+.menu .toggle {
+  position: absolute;
+  min-width: 15vh;
+  min-height: 15vh;
+  background: #fff;
+  color: #222327;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  cursor: pointer;
+  transition: 1.5s;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.menu .toggle.active {
+  transform: rotate(360deg);
+  box-shadow: 0 0 2px 110px #fff;
+  background-color: #222327;
+  color: #fff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu li {
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -50%) rotate(calc(360deg / 5 * var(--i)))
+    translateX(110px);
+  transform-origin: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-.card {
-  padding: 2em;
+.menu .rotate180 {
+  transform: translate(-25%, -50%) rotate(calc(360deg / 5 * var(--i) + 180deg))
+    translateX(110px);
 }
 
-.read-the-docs {
-  color: #888;
-}
+/* .menu.active li {
+  visibility: visible;
+  opacity: 1;
+} */
