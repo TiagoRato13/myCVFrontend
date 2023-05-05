@@ -4,6 +4,23 @@ import { NavLink } from "react-router-dom";
 function MenuBox() {
   const [Menu, setMenu] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [title, setTitle] = useState("Home");
+  const [showTitle, setShowTitle] = useState(false);
+
+  const handleMouseOver = (title) => {
+    setTitle(title);
+    console.log(title);
+  };
+
+  const handleToggleMenu = () => {
+    setTimeout(() => {
+      toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false);
+    }, 650);
+
+    setTimeout(() => {
+      Menu === false ? setShowTitle(true) : setShowTitle(false);
+    }, 1000);
+  };
 
   return (
     <>
@@ -13,27 +30,84 @@ function MenuBox() {
       >
         <div
           className={`toggle ${toggleMenu ? "active" : ""}`}
-          onClick={() => setToggleMenu(!toggleMenu)}
+          onClick={() => {
+            handleToggleMenu();
+          }}
         >
-          Tiago <br /> Rato
+          <NavLink to="/" onClick={() => setTitle("Home")}>
+            {Menu === false ? "ABOUT ME" : "Close"}
+          </NavLink>
         </div>
         {toggleMenu && (
           <>
             <li style={{ "--i": 0 }}>
-              <NavLink to="skills">Skills</NavLink>{" "}
+              <NavLink
+                to="about"
+                onClick={() => {
+                  setToggleMenu(false), setShowTitle(false);
+                }}
+                onMouseOver={() => handleMouseOver("About")}
+              >
+                About
+              </NavLink>
             </li>
             <li style={{ "--i": 1 }}>
-              <NavLink to="hobbies">Hobbies</NavLink>
+              <NavLink
+                to="education"
+                onClick={() => {
+                  setToggleMenu(false), setShowTitle(false);
+                }}
+                onMouseOver={() => handleMouseOver("Education")}
+              >
+                Education
+              </NavLink>
             </li>
-            <li className="rotate180" style={{ "--i": 2 }}>
-              <NavLink to="experience">Experience</NavLink>
+            <li style={{ "--i": 2 }}>
+              <NavLink
+                to="experience"
+                onClick={() => {
+                  setToggleMenu(false), setShowTitle(false);
+                }}
+                onMouseOver={() => handleMouseOver("Experience")}
+              >
+                Experience
+              </NavLink>
             </li>
-            <li className="rotate180" style={{ "--i": 3 }}>
-              <NavLink to="cv">CV</NavLink>
+            <li style={{ "--i": 3 }}>
+              <NavLink
+                to="cv"
+                onClick={() => {
+                  setToggleMenu(false), setShowTitle(false);
+                }}
+                onMouseOver={() => handleMouseOver("CV")}
+              >
+                CV
+              </NavLink>
             </li>
             <li style={{ "--i": 4 }}>
-              <NavLink to="education">Education</NavLink>
+              <NavLink
+                to="hobbies"
+                onClick={() => {
+                  setToggleMenu(false), setShowTitle(false);
+                }}
+                onMouseOver={() => handleMouseOver("Hobbies")}
+              >
+                Hobbies
+              </NavLink>
             </li>
+            {showTitle && (
+              <div>
+                <NavLink
+                  className="menuName"
+                  to={`${title.toLowerCase()}`}
+                  onClick={() => {
+                    setToggleMenu(false), setShowTitle(false);
+                  }}
+                >
+                  {title}
+                </NavLink>
+              </div>
+            )}
           </>
         )}
       </ul>

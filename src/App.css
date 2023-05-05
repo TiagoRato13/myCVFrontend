@@ -31,38 +31,52 @@ body {
 .menu {
   position: relative;
   top: 10vh;
-  left: -35vw;
+  left: 30vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1.5s;
+  transition: 2.5s;
 }
 
 .menu.active {
+  transform: rotate(360deg);
   top: 25vh;
-  left: -63vh;
+  left: -47vw;
+  transition: 1.5s ease-in-out;
 }
 
-.menu .toggle {
+.toggle {
   position: absolute;
   min-width: 15vh;
   min-height: 15vh;
-  background: #fff;
-  color: #222327;
+  background: rgb(6, 75, 90);
+  font-weight: bold;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: pointer;
-  transition: 1.5s;
+  border: 5px solid rgb(6, 75, 90);
+  transition: 1s;
 }
 
 .menu .toggle.active {
   transform: rotate(360deg);
-  box-shadow: 0 0 2px 110px #fff;
+  box-shadow: 0 0 0 110px #fff;
   background-color: #222327;
-  color: #fff;
+  transition: 1s;
+}
+
+.toggle.active a {
+  text-decoration: none;
+  color: white;
+}
+
+.toggle a {
+  text-decoration: none;
+  color: #222327;
+  transition: 1s;
 }
 
 .menu li {
@@ -70,7 +84,7 @@ body {
   list-style: none;
   top: 50%;
   left: 50%;
-  transform: translate(-25%, -50%) rotate(calc(360deg / 5 * var(--i)))
+  transform: translate(-25%, -50%) rotate(calc(200deg / 5 * var(--i) + 280deg))
     translateX(110px);
   transform-origin: center;
 }
@@ -81,12 +95,12 @@ body {
   font-weight: bold;
 }
 
-.menu .rotate180 {
-  transform: translate(-25%, -50%) rotate(calc(360deg / 5 * var(--i) + 180deg))
-    translateX(110px);
+.menuName {
+  color: rgb(6, 75, 90);
+  position: absolute;
+  text-decoration: none;
+  top: -7vh;
+  left: 105vw;
+  font-size: 4rem;
+  transition-duration: 1.5s;
 }
-
-/* .menu.active li {
-  visibility: visible;
-  opacity: 1;
-} */
