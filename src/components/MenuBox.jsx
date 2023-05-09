@@ -1,32 +1,39 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-function MenuBox() {
-  const [Menu, setMenu] = useState(false);
+function MenuBox({
+  menu,
+  setMenu,
+  showContent,
+  setShowContent,
+  activeContent,
+  setActiveContent,
+}) {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [title, setTitle] = useState("Home");
   const [showTitle, setShowTitle] = useState(false);
 
   const handleMouseOver = (title) => {
     setTitle(title);
-    console.log(title);
   };
 
   const handleToggleMenu = () => {
+    setShowContent(!showContent);
+    setActiveContent("home");
     setTimeout(() => {
-      toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false);
+      setToggleMenu(!toggleMenu);
     }, 650);
 
     setTimeout(() => {
-      Menu === false ? setShowTitle(true) : setShowTitle(false);
+      setShowTitle(!menu);
     }, 1000);
   };
 
   return (
     <>
       <ul
-        className={`menu ${Menu ? "active" : ""}`}
-        onClick={() => setMenu(!Menu)}
+        className={`menu ${menu ? "active" : ""}`}
+        onClick={() => setMenu(!menu)}
       >
         <div
           className={`toggle ${toggleMenu ? "active" : ""}`}
@@ -34,8 +41,12 @@ function MenuBox() {
             handleToggleMenu();
           }}
         >
-          <NavLink to="/" onClick={() => setTitle("Home")}>
-            {Menu === false ? "ABOUT ME" : "Close"}
+          <NavLink
+            to="/"
+            onMouseOver={() => handleMouseOver("Home")}
+            onClick={() => setTitle("Home")}
+          >
+            {menu === false ? "ABOUT ME" : "Close"}
           </NavLink>
         </div>
         {toggleMenu && (
@@ -44,7 +55,10 @@ function MenuBox() {
               <NavLink
                 to="about"
                 onClick={() => {
-                  setToggleMenu(false), setShowTitle(false);
+                  setToggleMenu(false),
+                    setShowTitle(false),
+                    setShowContent(true);
+                  setActiveContent("about");
                 }}
                 onMouseOver={() => handleMouseOver("About")}
               >
@@ -55,7 +69,10 @@ function MenuBox() {
               <NavLink
                 to="education"
                 onClick={() => {
-                  setToggleMenu(false), setShowTitle(false);
+                  setToggleMenu(false);
+                  setShowTitle(false);
+                  setShowContent(true);
+                  setActiveContent("education");
                 }}
                 onMouseOver={() => handleMouseOver("Education")}
               >
@@ -66,7 +83,10 @@ function MenuBox() {
               <NavLink
                 to="experience"
                 onClick={() => {
-                  setToggleMenu(false), setShowTitle(false);
+                  setToggleMenu(false),
+                    setShowTitle(false),
+                    setShowContent(true);
+                  setActiveContent("experience");
                 }}
                 onMouseOver={() => handleMouseOver("Experience")}
               >
@@ -77,7 +97,10 @@ function MenuBox() {
               <NavLink
                 to="cv"
                 onClick={() => {
-                  setToggleMenu(false), setShowTitle(false);
+                  setToggleMenu(false),
+                    setShowTitle(false),
+                    setShowContent(true);
+                  setActiveContent("cv");
                 }}
                 onMouseOver={() => handleMouseOver("CV")}
               >
@@ -86,13 +109,16 @@ function MenuBox() {
             </li>
             <li style={{ "--i": 4 }}>
               <NavLink
-                to="hobbies"
+                to="interests"
                 onClick={() => {
-                  setToggleMenu(false), setShowTitle(false);
+                  setToggleMenu(false),
+                    setShowTitle(false),
+                    setShowContent(true);
+                  setActiveContent("interests");
                 }}
-                onMouseOver={() => handleMouseOver("Hobbies")}
+                onMouseOver={() => handleMouseOver("Interests")}
               >
-                Hobbies
+                Interests
               </NavLink>
             </li>
             {showTitle && (
@@ -101,7 +127,10 @@ function MenuBox() {
                   className="menuName"
                   to={`${title.toLowerCase()}`}
                   onClick={() => {
-                    setToggleMenu(false), setShowTitle(false);
+                    setToggleMenu(false),
+                      setShowTitle(false),
+                      setShowContent(true);
+                    setActiveContent(`${title.toLowerCase()}`);
                   }}
                 >
                   {title}

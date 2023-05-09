@@ -91,7 +91,7 @@ body {
 
 .menu li a {
   text-decoration: none;
-  color: black;
+  color: #222327;
   font-weight: bold;
 }
 
@@ -102,5 +102,19 @@ body {
   top: -7vh;
   left: 105vw;
   font-size: 4rem;
+  font-weight: 150;
   transition-duration: 1.5s;
+}
+
+.teste {
+  color: white;
+}
+
+.component-enter {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.component-enter-active {
+  opacity: 1;
 }
