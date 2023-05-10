@@ -1,7 +1,7 @@
 import React from "react";
 
 function CV() {
-  return <div className="teste">CV</div>;
+  return <div>Secção Cv</div>;
 }
 
 export default CV;

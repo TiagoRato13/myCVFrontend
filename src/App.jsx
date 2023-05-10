@@ -8,6 +8,7 @@ import CV from "./components/CV";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Interests from "./components/Interests";
+import Title from "./components/Title";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -24,12 +25,18 @@ function App() {
         activeContent={activeContent}
         setActiveContent={setActiveContent}
       />
-      {showContent && activeContent === "home" && <Home />}
-      {showContent && activeContent === "about" && <About />}
-      {showContent && activeContent === "cv" && <CV />}
-      {showContent && activeContent === "education" && <Education />}
-      {showContent && activeContent === "experience" && <Experience />}
-      {showContent && activeContent === "interests" && <Interests />}
+
+      <div className="title">
+        {showContent && <Title activeContent={activeContent} />}
+      </div>
+      <div className="content">
+        {showContent && activeContent === "home" && <Home />}
+        {showContent && activeContent === "about" && <About />}
+        {showContent && activeContent === "cv" && <CV />}
+        {showContent && activeContent === "education" && <Education />}
+        {showContent && activeContent === "experience" && <Experience />}
+        {showContent && activeContent === "interests" && <Interests />}
+      </div>
     </div>
   );
 }

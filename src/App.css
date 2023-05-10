@@ -106,10 +106,6 @@ body {
   transition-duration: 1.5s;
 }
 
-.teste {
-  color: white;
-}
-
 .component-enter {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -118,3 +114,51 @@ body {
 .component-enter-active {
   opacity: 1;
 }
+
+/* --- TITLE --- */
+.title {
+  color: rgb(6, 75, 90);
+  position: absolute;
+  left: 15vw;
+  top: 4vh;
+}
+
+.title h1 {
+  font-size: 4.5em;
+}
+/* --- END TITLE --- */
+/* --- CONTENT --- */
+.content {
+  border: 2px solid red;
+  position: absolute;
+  top: 15vh;
+  color: white;
+  margin: 3vw;
+}
+/* --- END CONTENT --- */
+
+/* --- ABOUT --- */
+/* --- END ABOUT --- */
+
+/* --- EDUCATION --- */
+/* --- END EDUCATION --- */
+
+/* --- EXPERIENCE --- */
+/* --- END EXPERIENCE --- */
+
+/* --- CV --- */
+/* --- END CV --- */
+
+/* --- INTERESTS --- */
+
+.interest {
+  list-style: none;
+  font-size: 2em;
+  margin: 2vh auto;
+}
+
+.interest img {
+  width: 15vw;
+  margin: 0 10vw 0 0;
+}
+/* --- END INTERESTS --- */

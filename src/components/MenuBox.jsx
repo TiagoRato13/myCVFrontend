@@ -46,7 +46,7 @@ function MenuBox({
             onMouseOver={() => handleMouseOver("Home")}
             onClick={() => setTitle("Home")}
           >
-            {menu === false ? "ABOUT ME" : "Close"}
+            {menu === false ? "ABOUT ME" : "Home"}
           </NavLink>
         </div>
         {toggleMenu && (

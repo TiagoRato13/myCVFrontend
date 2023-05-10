@@ -1,7 +1,7 @@
 import React from "react";
 
 function Experience() {
-  return <div className="teste">Experience</div>;
+  return <div>Secção Experience</div>;
 }
 
 export default Experience;
