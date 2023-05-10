@@ -1,36 +1,75 @@
-import React from "react";
-import Temporary from "../assets/images/temporary_image.png";
+import React, { useState, useEffect } from "react";
+
+/* COMPONENTS */
+import projectService from "../services/project.service";
 
 function Interests() {
+  /* const [visible, setVisible] = useState(false); */
+  const [interestId, setInterestId] = useState(null)
+  const [interests, setInterests] = useState([]);
+
+  const getInterests = async () => {
+    try {
+      const response = await projectService.getInterests();
+      console.log(response.data);
+      setInterests(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getInterests();
+  }, []);
+
+
+  const handleToggleInterest = (id) => {
+    /* setVisible(true) */
+    {id === interestId ? setInterestId(null) : setInterestId(id)}
+  }
+
   return (
     <>
-      <ul>Secção Interests</ul>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        dogs
-      </li>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        Travel
-      </li>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        Movies
-      </li>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        Scuba Diving
-      </li>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        Music
-      </li>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        Board Games
-      </li>
+      
+      {interests.length &&
+        interests.map((interest) => {
+          return (
+            <section className="interest" key = {interest._id} onClick={() => handleToggleInterest(interest._id)}>
+              <img src={interest.icon} alt={interest.name} />
+              <h3 className="interest_section">{interest.name}</h3>
+              {interestId === interest._id  && <p>{interest.adicionalInfo}</p>}
+              
+            </section>
+          );
+        })}
     </>
   );
 }
 
 export default Interests;
+
+/* <li className="interest">
+        <img src={Temporary} alt="dogs" />
+        <h3 className="interest_section">Dogs</h3>
+      </li>
+      {visible && <>teste</>}
+      <li className="interest">
+        <img src={Temporary} alt="dogs" />
+        <h3 className="interest_section">Travel</h3>
+      </li>
+      <li className="interest">
+        <img src={Temporary} alt="dogs" />
+        <h3 className="interest_section">Movies</h3>
+      </li>
+      <li className="interest">
+        <img src={Temporary} alt="dogs" />
+        <h3 className="interest_section">Scuba Diving</h3>
+      </li>
+      <li className="interest">
+        <img src={Temporary} alt="dogs" />
+        <h3 className="interest_section">Music</h3>
+      </li>
+      <li className="interest">
+        <img src={Temporary} alt="dogs" />
+        <h3 className="interest_section">Board Games</h3>
+      </li> */

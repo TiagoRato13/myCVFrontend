@@ -125,11 +125,11 @@ body {
 
 .title h1 {
   font-size: 4.5em;
+  font-weight: 200;
 }
 /* --- END TITLE --- */
 /* --- CONTENT --- */
 .content {
-  border: 2px solid red;
   position: absolute;
   top: 15vh;
   color: white;
@@ -155,10 +155,18 @@ body {
   list-style: none;
   font-size: 2em;
   margin: 2vh auto;
+  display: flex;
+  align-items: center;
 }
 
 .interest img {
-  width: 15vw;
+  width: 20vw;
+  height: 20vw;
   margin: 0 10vw 0 0;
+  border-radius: 50%;
+}
+
+.interest_section {
+  cursor: pointer;
 }
 /* --- END INTERESTS --- */
