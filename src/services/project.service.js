@@ -37,7 +37,16 @@ class ProjectService {
 
   /* ----- END USER ----- */
 
-    /* ------- INTERESTS ------- */
+  /* ------- HOME ------- */
+  //Get Interests
+
+  getHome = () => {
+    return this.api.get("/api/home");
+  };
+
+  /* ----- END HOME ----- */
+
+  /* ------- INTERESTS ------- */
   //Get Interests
 
   getInterests = () => {

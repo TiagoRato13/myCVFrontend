@@ -30,8 +30,8 @@ body {
 
 .menu {
   position: relative;
-  top: 10vh;
-  left: 30vw;
+  top: 15vh;
+  left: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,6 +137,12 @@ body {
 }
 /* --- END CONTENT --- */
 
+/* --- HOME --- */
+.teste div{
+  color: white;
+}
+/* --- END HOME --- */
+
 /* --- ABOUT --- */
 /* --- END ABOUT --- */
 
@@ -153,20 +159,53 @@ body {
 
 .interest {
   list-style: none;
-  font-size: 2em;
   margin: 2vh auto;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition-duration: 1.5s;
+}
+
+.interest h3 {
+  font-size: 2em;
+  transition-duration: 1s;
+}
+
+.interest h3:hover {
+  font-size: 3em;
+  transition-duration: 0.7s;
+}
+
+.interest:hover {
+  color: rgb(6, 75, 90);
+  transition-duration: 0.5s;
 }
 
 .interest img {
-  width: 20vw;
-  height: 20vw;
+  width: 8vw;
+  height: 8vw;
   margin: 0 10vw 0 0;
   border-radius: 50%;
 }
 
-.interest_section {
-  cursor: pointer;
+.interest_adicionalInfo {
+  margin: auto 10vw;
+}
+
+.paragraph {
+  margin-left: 3vw;
+}
+
+.interest_pictures {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10vh;
+  gap: 3vw;
+}
+
+.interest_pictures img {
+  width: 25vw;
+  box-shadow: 0 0 15px rgb(6, 75, 90);
 }
 /* --- END INTERESTS --- */
