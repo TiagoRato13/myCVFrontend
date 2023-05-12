@@ -3,13 +3,13 @@ import React, { useState, useEffect } from "react";
 import projectService from "../services/project.service";
 
 function Home() {
-  const [info, setInfo] = useState([]);
+  const [home, setHome] = useState([]);
 
   const getHome = async () => {
     try {
       const response = await projectService.getHome();
       console.log(response.data);
-      setInfo(response.data);
+      setHome(response.data);
     } catch (error) {
       console.log(error);
     }
@@ -20,16 +20,26 @@ function Home() {
   }, []);
 
   return (
-  <section className="teste">
-    <div>Secção Home</div>
-    <div>{info.info}</div>
-    <img src={info.picture} alt="" />
-    <div>{info.github}</div>
-    <div>{info.linkedin}</div>
-    <div>{info.phone}</div>
-    <div>{info.email}</div>
-  </section>
-    );
+    <>
+      {home && (
+        <>
+          <section className="home_section_one">
+            <img src={home.picture} alt="" className="home_picture" />
+            <div className="teste1">
+              {home.info &&
+                home.info.map((info, id) => {
+                  return <p key={id}>{info}</p>;
+                })}
+            </div>
+          </section>
+        </>
+      )}
+      <section>{home.linkedin}</section>
+      <section>{home.github}</section>
+      <section>{home.email}</section>
+      <section>{home.phone}</section>
+    </>
+  );
 }
 
 export default Home;

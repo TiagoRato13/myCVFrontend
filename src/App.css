@@ -3,17 +3,11 @@
   padding: 0;
 }
 
-.navbar {
-  background-color: aqua;
+/* --- GLOBAL CSS --- */
+.paragraph {
+  margin-left: 3vw;
 }
-
-/* .navbar-toggler {
-  padding: 0;
-} */
-
-.navbar-toggler-icon {
-  background-image: url("/src/assets/images/12_asadas12221.jpg") !important;
-}
+/* --- END GLOBAL CSS --- */
 
 /* MENU */
 
@@ -131,15 +125,27 @@ body {
 /* --- CONTENT --- */
 .content {
   position: absolute;
-  top: 15vh;
+  top: 25vh;
   color: white;
   margin: 3vw;
 }
 /* --- END CONTENT --- */
 
 /* --- HOME --- */
-.teste div{
-  color: white;
+.home_section_one {
+  display: inline-block;
+  align-items: start;
+  flex-wrap: nowrap;
+}
+
+.home_picture {
+  width: 40%;
+  float: left;
+  margin: 0 3vw 1vh 0;
+}
+
+.teste1 {
+  flex-grow: 1;
 }
 /* --- END HOME --- */
 
@@ -190,10 +196,6 @@ body {
 
 .interest_adicionalInfo {
   margin: auto 10vw;
-}
-
-.paragraph {
-  margin-left: 3vw;
 }
 
 .interest_pictures {
