@@ -8,7 +8,7 @@ function Home() {
   const getHome = async () => {
     try {
       const response = await projectService.getHome();
-      console.log(response.data);
+      /* console.log(response.data); */
       setHome(response.data);
     } catch (error) {
       console.log(error);

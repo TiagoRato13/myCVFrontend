@@ -55,6 +55,15 @@ class ProjectService {
 
   /* ----- END INTERESTS ----- */
 
+    /* ------- PROJECTS ------- */
+  //Get Projects
+
+  getProjects = () => {
+    return this.api.get("/api/projects");
+  };
+
+  /* ----- END INTERESTS ----- */
+
   /* ----- CLOUDINARY ----- */
   uploadImage = (file) => {
     return this.api
