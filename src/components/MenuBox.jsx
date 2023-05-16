@@ -10,7 +10,7 @@ function MenuBox({
   setActiveContent,
 }) {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [title, setTitle] = useState("Home");
+  const [title, setTitle] = useState("What do you want to know about?");
   const [showTitle, setShowTitle] = useState(false);
 
   const handleMouseOver = (title) => {
@@ -43,10 +43,12 @@ function MenuBox({
         >
           <NavLink
             to="/"
-            onMouseOver={() => handleMouseOver("Home")}
-            onClick={() => setTitle("Home")}
+            onMouseOver={() =>
+              handleMouseOver("What do you want to know about?")
+            }
+            onClick={() => setTitle("What do you want to know about?")}
           >
-            {menu === false ? "ABOUT ME" : "Home"}
+            {menu === false ? "ABOUT ME" : "Back"}
           </NavLink>
         </div>
         {toggleMenu && (

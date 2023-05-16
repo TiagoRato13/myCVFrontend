@@ -34,15 +34,15 @@ body {
 
 .menu.active {
   transform: rotate(360deg);
-  top: 25vh;
+  top: 30vh;
   left: -47vw;
   transition: 1.5s ease-in-out;
 }
 
 .toggle {
   position: absolute;
-  min-width: 15vh;
-  min-height: 15vh;
+  min-width: 18vh;
+  min-height: 18vh;
   background: rgb(6, 75, 90);
   font-weight: bold;
   border-radius: 50%;
@@ -93,8 +93,10 @@ body {
   color: rgb(6, 75, 90);
   position: absolute;
   text-decoration: none;
+  text-align: center;
   top: -7vh;
-  left: 105vw;
+  left: 80vw;
+  width: 50vw;
   font-size: 4rem;
   font-weight: 150;
   transition-duration: 1.5s;
@@ -115,6 +117,13 @@ body {
   position: absolute;
   left: 15vw;
   top: 4vh;
+}
+
+.titleHome {
+  color: rgb(6, 75, 90);
+  position: absolute;
+  left: 5vw;
+  top: 12vh;
 }
 
 .title h1 {

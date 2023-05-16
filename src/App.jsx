@@ -26,8 +26,13 @@ function App() {
         setActiveContent={setActiveContent}
       />
 
-      <div className="title">
-        {showContent && <Title activeContent={activeContent} />}
+      <div className={` ${activeContent !== "home" ? "title" : "titleHome"}`}>
+        {showContent && activeContent !== "home" && (
+          <Title activeContent={activeContent} />
+        )}
+        {showContent && activeContent === "home" && (
+          <Title activeContent="Hello, my name is Tiago. Welcome to my web CV" />
+        )}
       </div>
       <div className="content">
         {showContent && activeContent === "home" && <Home />}
