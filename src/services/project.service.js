@@ -38,7 +38,7 @@ class ProjectService {
   /* ----- END USER ----- */
 
   /* ------- HOME ------- */
-  //Get Interests
+  //Get Home
 
   getHome = () => {
     return this.api.get("/api/home");
@@ -50,19 +50,28 @@ class ProjectService {
   //Get Interests
 
   getInterests = () => {
-    return this.api.get("/api/interests");
+    return this.api.get("/api/interest");
   };
 
   /* ----- END INTERESTS ----- */
 
-    /* ------- PROJECTS ------- */
+  /* ------- EDUCATION ------- */
+  //Get Education
+
+  getEducation = () => {
+    return this.api.get("/api/education");
+  };
+
+  /* ----- END EDUCATION ----- */
+
+  /* ------- PROJECTS ------- */
   //Get Projects
 
   getProjects = () => {
     return this.api.get("/api/projects");
   };
 
-  /* ----- END INTERESTS ----- */
+  /* ----- END PROJECTS ----- */
 
   /* ----- CLOUDINARY ----- */
   uploadImage = (file) => {

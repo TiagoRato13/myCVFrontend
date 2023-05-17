@@ -44,7 +44,12 @@ function Interests() {
               onClick={() => handleToggleInterest(interest._id)}
             >
               <div className="interest">
-                <img src={interest.icon} alt={interest.name} />
+                {interestId === interest._id ? (
+                  <img src={interest.activeIcon} alt={interest.name} />
+                ) : (
+                  <img src={interest.inactiveIcon} alt={interest.name} />
+                )}
+
                 <h3 className="interest_section">{interest.name}</h3>
               </div>
               <div>
@@ -78,29 +83,3 @@ function Interests() {
 }
 
 export default Interests;
-
-/* <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        <h3 className="interest_section">Dogs</h3>
-      </li>
-      {visible && <>teste</>}
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        <h3 className="interest_section">Travel</h3>
-      </li>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        <h3 className="interest_section">Movies</h3>
-      </li>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        <h3 className="interest_section">Scuba Diving</h3>
-      </li>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        <h3 className="interest_section">Music</h3>
-      </li>
-      <li className="interest">
-        <img src={Temporary} alt="dogs" />
-        <h3 className="interest_section">Board Games</h3>
-      </li> */
