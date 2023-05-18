@@ -25,7 +25,7 @@ function Home() {
         <>
           <section className="home_section_one">
             <img src={home.picture} alt="" className="home_picture" />
-            <div className="teste1">
+            <div>
               {home.info &&
                 home.info.map((info, id) => {
                   return <p key={id}>{info}</p>;

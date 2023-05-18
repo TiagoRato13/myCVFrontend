@@ -135,6 +135,12 @@ function MenuBox({
                     setActiveContent(`${title.toLowerCase()}`);
                   }}
                 >
+                  <img
+                    className="menuName-image"
+                    src="https://res.cloudinary.com/datglss57/image/upload/v1684323897/myCV/Mouse_JumpRope_NoBG_i9ucrc.gif"
+                    alt=""
+                  />{" "}
+                  <br />
                   {title}
                 </NavLink>
               </div>

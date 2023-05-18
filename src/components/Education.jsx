@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import projectService from "../services/project.service";
 
 function Education() {
-  const [projects, setProjects] = useState([]);
+  /* const [projects, setProjects] = useState([]); */
   const [education, setEducation] = useState([]);
 
   const getEducation = async () => {
@@ -16,19 +16,19 @@ function Education() {
     }
   };
 
-  const getProjects = async () => {
+  /* const getProjects = async () => {
     try {
       const response = await projectService.getProjects();
-      /* console.log(response.data); */
+      console.log(response.data);
       setProjects(response.data);
     } catch (error) {
       console.log(error);
     }
-  };
+  }; */
 
   useEffect(() => {
     getEducation();
-    getProjects();
+    /* getProjects(); */
   }, []);
 
   return (
@@ -63,7 +63,26 @@ function Education() {
                 {bootcamp.project.map((project, projectId) => {
                   return (
                     <div className="separator" key={projectId}>
-                      {project}
+                      <div>{project.name}</div>
+                      <img
+                        className="project-image"
+                        src={project.image}
+                        alt={project.name}
+                      />
+                      <div>
+                        <ul>Technologies used:</ul>
+                        <div className="project-technologies">
+                          {project.technology &&
+                            project.technology.map((tech, techId) => {
+                              return (
+                                <>
+                                  {techId === 0 ? "" : "|"}
+                                  <li key={techId}>{tech}</li>
+                                </>
+                              );
+                            })}
+                        </div>
+                      </div>
                     </div>
                   );
                 })}
