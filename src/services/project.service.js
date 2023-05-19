@@ -73,6 +73,15 @@ class ProjectService {
 
   /* ----- END PROJECTS ----- */
 
+  /* ------- EXPERIENCE ------- */
+  //Get Experience
+
+  getExperience = () => {
+    return this.api.get("/api/experience");
+  };
+
+  /* ----- END EXPERIENCE ----- */
+
   /* ----- CLOUDINARY ----- */
   uploadImage = (file) => {
     return this.api

@@ -48,80 +48,62 @@ function MenuBox({
             }
             onClick={() => setTitle("What do you want to know about?")}
           >
-            {menu === false ? "ABOUT ME" : "Back"}
+            {menu === false ? "ABOUT ME" : "About"}
           </NavLink>
         </div>
         {toggleMenu && (
           <>
-            <li style={{ "--i": 0 }}>
-              <NavLink
-                to="about"
-                onClick={() => {
-                  setToggleMenu(false),
-                    setShowTitle(false),
-                    setShowContent(true);
-                  setActiveContent("about");
-                }}
-                onMouseOver={() => handleMouseOver("About")}
-              >
-                About
-              </NavLink>
+            <li
+              style={{ "--i": 0 }}
+              onClick={() => {
+                setToggleMenu(false), setShowTitle(false), setShowContent(true);
+                setActiveContent("about");
+              }}
+              onMouseOver={() => handleMouseOver("About")}
+            >
+              <NavLink to="about">About</NavLink>
             </li>
-            <li style={{ "--i": 1 }}>
-              <NavLink
-                to="education"
-                onClick={() => {
-                  setToggleMenu(false);
-                  setShowTitle(false);
-                  setShowContent(true);
-                  setActiveContent("education");
-                }}
-                onMouseOver={() => handleMouseOver("Education")}
-              >
-                Education
-              </NavLink>
+            <li
+              style={{ "--i": 1 }}
+              onClick={() => {
+                setToggleMenu(false);
+                setShowTitle(false);
+                setShowContent(true);
+                setActiveContent("education");
+              }}
+              onMouseOver={() => handleMouseOver("Education")}
+            >
+              <NavLink to="education">Education</NavLink>
             </li>
-            <li style={{ "--i": 2 }}>
-              <NavLink
-                to="experience"
-                onClick={() => {
-                  setToggleMenu(false),
-                    setShowTitle(false),
-                    setShowContent(true);
-                  setActiveContent("experience");
-                }}
-                onMouseOver={() => handleMouseOver("Experience")}
-              >
-                Experience
-              </NavLink>
+            <li
+              style={{ "--i": 2 }}
+              onClick={() => {
+                setToggleMenu(false), setShowTitle(false), setShowContent(true);
+                setActiveContent("experience");
+              }}
+              onMouseOver={() => handleMouseOver("Experience")}
+            >
+              <NavLink to="experience">Experience</NavLink>
             </li>
-            <li style={{ "--i": 3 }}>
-              <NavLink
-                to="cv"
-                onClick={() => {
-                  setToggleMenu(false),
-                    setShowTitle(false),
-                    setShowContent(true);
-                  setActiveContent("cv");
-                }}
-                onMouseOver={() => handleMouseOver("CV")}
-              >
-                CV
-              </NavLink>
+            <li
+              style={{ "--i": 3 }}
+              onClick={() => {
+                setToggleMenu(false), setShowTitle(false), setShowContent(true);
+                setActiveContent("cv");
+              }}
+              onMouseOver={() => handleMouseOver("CV")}
+            >
+              <NavLink to="cv">CV</NavLink>
             </li>
-            <li style={{ "--i": 4 }}>
-              <NavLink
-                to="interests"
-                onClick={() => {
-                  setToggleMenu(false),
-                    setShowTitle(false),
-                    setShowContent(true);
-                  setActiveContent("interests");
-                }}
-                onMouseOver={() => handleMouseOver("Interests")}
-              >
-                Interests
-              </NavLink>
+            <li
+              style={{ "--i": 4 }}
+              onClick={() => {
+                setToggleMenu(false), setShowTitle(false), setShowContent(true);
+                setActiveContent("interests");
+              }}
+              onMouseOver={() => handleMouseOver("Interests")}
+            >
+              <NavLink to="interests">Interests</NavLink>
             </li>
             {showTitle && (
               <div>

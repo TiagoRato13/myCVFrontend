@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 import projectService from "../services/project.service";
+import { NavLink } from "react-router-dom";
 
 function Education() {
-  /* const [projects, setProjects] = useState([]); */
   const [education, setEducation] = useState([]);
 
   const getEducation = async () => {
@@ -16,19 +16,8 @@ function Education() {
     }
   };
 
-  /* const getProjects = async () => {
-    try {
-      const response = await projectService.getProjects();
-      console.log(response.data);
-      setProjects(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  }; */
-
   useEffect(() => {
     getEducation();
-    /* getProjects(); */
   }, []);
 
   return (
@@ -63,12 +52,18 @@ function Education() {
                 {bootcamp.project.map((project, projectId) => {
                   return (
                     <div className="separator" key={projectId}>
-                      <div>{project.name}</div>
-                      <img
-                        className="project-image"
-                        src={project.image}
-                        alt={project.name}
-                      />
+                      <NavLink
+                        to={project.link}
+                        target="_blank"
+                        className="project-link"
+                      >
+                        <div>{project.name}</div>
+                        <img
+                          className="project-image"
+                          src={project.image}
+                          alt={project.name}
+                        />
+                      </NavLink>
                       <div>
                         <ul>Technologies used:</ul>
                         <div className="project-technologies">
