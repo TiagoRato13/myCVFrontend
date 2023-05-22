@@ -5,11 +5,25 @@ import projectService from "../services/project.service";
 function Experience() {
   const [experience, setExperience] = useState([]);
 
+  /* teste */
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const visiblePhotos = 3;
+
+  const handlePrevious = () => {
+    setCurrentIndex(currentIndex - 1);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex(currentIndex + 1);
+  };
+
+  /* teste */
+
   const getExperience = async () => {
     try {
       const response = await projectService.getExperience();
       console.log(response.data);
-      setExperience(response.data);
+      setExperience(response.data.reverse());
     } catch (error) {}
   };
 
@@ -53,22 +67,30 @@ function Experience() {
                     return (
                       <>
                         {skillId === 0 ? "" : "|"}
-                        <p key={skillId} className="experience-skills-name">{skill}</p>
+                        <p key={skillId} className="experience-skills-name">
+                          {skill}
+                        </p>
                       </>
                     );
                   })}
               </div>
 
               {experience.photos &&
-                experience.photos.map((photo) => {
-                  return (
-                    <img
-                      src={photo}
-                      alt={experience.company}
-                      className="experience-company-photo"
-                    />
-                  );
-                })}
+                experience.photos
+                  .slice(currentIndex, currentIndex + visiblePhotos)
+                  .map((photo) => {
+                    return (
+                      <img
+                        src={photo}
+                        alt={experience.company}
+                        className="experience-company-photo"
+                      />
+                    );
+                  })}
+              <br />
+
+              <button onClick={() => handlePrevious()}>previous</button>
+              <button onClick={() => handleNext()}>next</button>
             </section>
           );
         })}
@@ -77,13 +99,3 @@ function Experience() {
 }
 
 export default Experience;
-
-{
-  /* <div className="experience-company">
-                <div>
-                  <div>{experience.position}</div>
-                  <h4>{experience.company},</h4>
-                  <h6>{experience.location}</h6>
-                </div>
-              </div> */
-}
