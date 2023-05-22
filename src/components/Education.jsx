@@ -51,7 +51,12 @@ function Education() {
               >
                 {bootcamp.project.map((project, projectId) => {
                   return (
-                    <div className="separator" key={projectId}>
+                    <div
+                      className={`separator ${
+                        projectId < bootcamp.project.length - 1 ? "vertSeparator" : ""
+                      }`}
+                      key={projectId}
+                    >
                       <NavLink
                         to={project.link}
                         target="_blank"

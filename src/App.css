@@ -208,12 +208,17 @@ body {
 .education-projects {
   display: flex;
   justify-content: space-evenly;
-  gap: 5vw;
+  gap: 2vw;
 }
 
 .separator {
   margin-bottom: 4vh;
   text-align: center;
+}
+
+.vertSeparator {
+  border-right: 1px solid rgb(6, 75, 90);
+  padding-right: 2vw;
 }
 
 .project-link {
