@@ -10,11 +10,15 @@ function Experience() {
   const visiblePhotos = 3;
 
   const handlePrevious = () => {
-    setCurrentIndex(currentIndex - 1);
+    setCurrentIndex(currentIndex > 0 ? currentIndex - 1 : 0);
   };
 
-  const handleNext = () => {
-    setCurrentIndex(currentIndex + 1);
+  const handleNext = (photos) => {
+    setCurrentIndex((currentIndex) =>
+      currentIndex <= photos.length - visiblePhotos - 1
+        ? currentIndex + 1
+        : currentIndex
+    );
   };
 
   /* teste */
@@ -75,22 +79,27 @@ function Experience() {
                   })}
               </div>
 
-              {experience.photos &&
-                experience.photos
-                  .slice(currentIndex, currentIndex + visiblePhotos)
-                  .map((photo) => {
-                    return (
-                      <img
-                        src={photo}
-                        alt={experience.company}
-                        className="experience-company-photo"
-                      />
-                    );
-                  })}
-              <br />
+              <div className="experience-photo-box">
+                {experience.photos &&
+                  experience.photos
+                    .slice(currentIndex, currentIndex + visiblePhotos)
+                    .map((photo, photoId) => {
+                      return (
+                        <img
+                          key={photoId}
+                          src={photo}
+                          alt={experience.company}
+                          className="experience-company-photo"
+                        />
+                      );
+                    })}
 
-              <button onClick={() => handlePrevious()}>previous</button>
-              <button onClick={() => handleNext()}>next</button>
+                <br />
+                <button className="photoButton" onClick={() => handlePrevious()}>previous</button>
+                <button className="photoButton" onClick={() => handleNext(experience.photos)}>
+                  next
+                </button>
+              </div>
             </section>
           );
         })}

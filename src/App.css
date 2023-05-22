@@ -34,7 +34,7 @@ body {
 .menu {
   position: relative;
   top: 15vh;
-  left: 90vw;
+  left: 85vw;
   width: 1vw;
   margin: 0;
   display: flex;
@@ -300,9 +300,36 @@ body {
   color: white;
 }
 
+.experience-photo-box {
+  margin: auto;
+  width: 90vw;
+
+  text-align: center;
+}
+
 .experience-company-photo {
-  width: 20vw;
-  border: 1px solid white;
+  max-width: 25vw;
+  max-height: 30vh;
+  margin: 0 1vw;
+  border: 0.15vw solid rgb(6, 75, 90);
+  border-radius: 5px;
+}
+
+.photoButton {
+  padding: 0.5vh 1vw;
+  background-color: transparent;
+  border: none;
+  margin: 3vh 2vw 0;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: white;
+  transition-duration: 1s;
+}
+
+.photoButton:hover {
+  color: rgb(6, 75, 90);
+  text-shadow: 0 0 3vh grey;
+  transition-duration: 1s;
 }
 /* --- END EXPERIENCE --- */
 
