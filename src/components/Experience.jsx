@@ -52,6 +52,7 @@ function Experience() {
             </div>
           </div>
         </div>
+              <p className="experience-date"><span>From:</span> {experience.startDate} to {experience.endDate}</p>
 
         <div className="experience-tasks">
           {experience.tasks &&
@@ -88,14 +89,19 @@ function Experience() {
                   />
                 );
               })}
-          <br />
 
-          <button className="photoButton" onClick={handlePrevious}>
-            &lt; previous
-          </button>
-          <button className="photoButton" onClick={handleNext}>
-            next &gt;
-          </button>
+          {experience.photos.length > 0 && (
+            <>
+              <br />
+
+              <button className="photoButton" onClick={handlePrevious}>
+                &lt; previous
+              </button>
+              <button className="photoButton" onClick={handleNext}>
+                next &gt;
+              </button>
+            </>
+          )}
         </div>
       </section>
     );

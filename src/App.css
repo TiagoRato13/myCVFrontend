@@ -264,8 +264,7 @@ body {
 }
 
 .experience-company-img {
-  width: 8%;
-  border-radius: 35%;
+  width: 10%;
   align-self: center;
 }
 
@@ -280,6 +279,17 @@ body {
   gap: 5vh;
 }
 
+.experience-date {
+  font-size: 0.75em;
+  margin-top: 2vh;
+}
+
+.experience-date > span {
+  color: rgb(6, 75, 90);
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
 .experience-tasks {
   margin: 5vh 0 0 3vw;
 }
@@ -291,13 +301,17 @@ body {
 .experience-skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 1vw;
+  justify-content: center;
+  font-size: 0.9em;
+  font-weight: 300;
+  gap: 0.5vw;
   margin: 5vh 0;
   color: rgb(6, 75, 90);
 }
 
 .experience-skills-name {
   color: white;
+  margin: 0;
 }
 
 .experience-photo-box {
