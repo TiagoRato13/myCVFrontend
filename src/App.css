@@ -170,6 +170,39 @@ body {
   margin: 0 3vw 1vh 0;
 }
 
+.home-info {
+  text-align: center;
+  margin: 4vh 0;
+}
+
+.home-info img {
+  width: 5vh;
+}
+
+.home-links {
+  margin: 0 4vh;
+}
+
+.home-email {
+  text-align: center;
+  width: 20vw;
+  margin: auto;
+  border: 3px solid rgb(6, 75, 90);
+  border-radius: 10px;
+  padding: 2vh;
+  transition-duration: 1s;
+  background-color: rgb(6, 75, 90);
+  color: white;
+  box-shadow: inset 5px 5px 20px 3px black;
+}
+
+.home-email:hover {
+  border: 3px solid white;
+  transition-duration: 1s;
+  background-color: white;
+  color: rgb(6, 75, 90);
+  box-shadow: inset 5px 5px 20px 3px black;
+}
 /* --- END HOME --- */
 
 /* --- ABOUT --- */
@@ -390,6 +423,6 @@ body {
 
 .interest_pictures img {
   width: 25vw;
-  box-shadow: 0 0 15px rgb(6, 75, 90);
+  box-shadow: 0 0 15px #064b5a;
 }
 /* --- END INTERESTS --- */
