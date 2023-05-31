@@ -201,6 +201,11 @@ export default Home;
   }
   
 
+
+  <NavLink to={curriculum} target="_blank" download>
+                Download CV
+              </NavLink>
+
   
   
   

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import curriculum from "../assets/images/CV Tiago Rato 2023.pdf";
-
 function MenuBox({
   menu,
   setMenu,
@@ -59,13 +57,11 @@ function MenuBox({
               style={{ "--i": 0 }}
               onClick={() => {
                 setToggleMenu(false), setShowTitle(false), setShowContent(true);
-                setActiveContent("home");
+                setActiveContent("projects");
               }}
-              onMouseOver={() => handleMouseOver("Download Cv")}
+              onMouseOver={() => handleMouseOver("Projects")}
             >
-              <NavLink to={curriculum} target="_blank" download>
-                Download CV
-              </NavLink>
+              <NavLink to="projects">Projects</NavLink>
             </li>
             <li
               style={{ "--i": 1 }}
@@ -114,20 +110,12 @@ function MenuBox({
               <div>
                 <NavLink
                   className="menuName"
-                  to={
-                    title === "What do you want to know about?"
-                      ? `/`
-                      : `${title.toLowerCase()}`
-                  }
+                  to={`${title.toLowerCase()}`}
                   onClick={() => {
                     setToggleMenu(false),
                       setShowTitle(false),
                       setShowContent(true);
-                    setActiveContent(
-                      title === "What do you want to know about?"
-                        ? `home`
-                        : `${title.toLowerCase()}`
-                    );
+                    setActiveContent(`${title.toLowerCase()}`);
                   }}
                 >
                   <img
@@ -148,5 +136,3 @@ function MenuBox({
 }
 
 export default MenuBox;
-
-/* to={title === 'What do you want to know about?' ? `${home}` : `${title.toLowerCase()}`} */
