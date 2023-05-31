@@ -15,7 +15,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
   [`& .${tooltipClasses.tooltip}`]: {
     backgroundColor: "rgb(6, 75, 90)",
     padding: "1.5vh",
-    margin: "0 0 10vh 5vh !important",
+    margin: "0 0 -2vh 2vh !important",
     fontSize: "14px",
   },
 }));
@@ -81,7 +81,7 @@ function Home() {
                 >
                   <BootstrapTooltip
                     title="That's the spirit 😎!"
-                    placement="right-start"
+                    placement="right-end"
                     arrow
                     TransitionComponent={Zoom}
                   >
