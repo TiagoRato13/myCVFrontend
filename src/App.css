@@ -59,6 +59,7 @@ body {
   min-width: 18vh;
   min-height: 18vh;
   background: rgb(6, 75, 90);
+  box-shadow: 0 0 30px #0a778f;
   font-weight: bold;
   border-radius: 50%;
   display: flex;
@@ -66,13 +67,14 @@ body {
   align-items: center;
   text-align: center;
   cursor: pointer;
-  border: 5px solid rgb(6, 75, 90);
+  border: 1px solid grey;
   transition: 1s;
 }
 
 .menu .toggle.active {
   transform: rotate(360deg);
-  box-shadow: 0 0 0 110px #fff;
+  border: 5px solid rgb(6, 75, 90);
+  box-shadow: 0 0 20px 115px #0a778f, inset 0 0 30px 5px black;
   background-color: #222327;
   transition: 1s;
 }
@@ -101,12 +103,14 @@ body {
 
 .menu li a {
   text-decoration: none;
-  color: #222327;
+  color: white;
+  text-shadow: 0 0 10px black;
   font-weight: bold;
 }
 
 .menuName {
-  color: rgb(6, 75, 90);
+  color: white;
+  font-weight: bold;
   position: absolute;
   text-decoration: none;
   text-align: center;
@@ -114,7 +118,7 @@ body {
   left: 30vw;
   width: 50vw;
   font-size: 4rem;
-  font-weight: 150;
+  text-shadow: 0 0 40px #0a778f;
   transition-duration: 1.5s;
 }
 
@@ -134,10 +138,11 @@ body {
 
 /* --- TITLE --- */
 .title {
-  color: rgb(6, 75, 90);
+  color: white;
+  text-shadow: 0 0 40px #0a778f;
   position: absolute;
   left: 15vw;
-  top: 4vh;
+  top: 9vh;
 }
 
 .titleHome {
@@ -149,7 +154,7 @@ body {
 
 .title h1 {
   font-size: 4.5em;
-  font-weight: 200;
+  font-weight: bold;
 }
 /* --- END TITLE --- */
 /* --- CONTENT --- */
@@ -157,7 +162,7 @@ body {
   position: absolute;
   top: 25vh;
   color: white;
-  margin: 3vw;
+  margin: 1vw 3vw;
 }
 /* --- END CONTENT --- */
 
@@ -173,6 +178,7 @@ body {
 
 .home-section h1 {
   font-size: 4.5em;
+  text-shadow: 0 0 40px #0a778f;
   font-weight: 900;
 }
 
