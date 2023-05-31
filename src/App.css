@@ -74,7 +74,6 @@ body {
   transform: rotate(360deg);
   box-shadow: 0 0 0 110px #fff;
   background-color: #222327;
-
   transition: 1s;
 }
 
@@ -92,10 +91,11 @@ body {
 .menu li {
   position: absolute;
   list-style: none;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-25%, -50%) rotate(calc(200deg / 5 * var(--i) + 280deg))
-    translateX(110px);
+    translateX(120px);
   transform-origin: center;
 }
 
@@ -294,7 +294,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2vw;
+  gap: 1vw;
   color: rgb(6, 75, 90);
 }
 

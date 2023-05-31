@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import "./App.css";
 import MenuBox from "./components/MenuBox";
 import Home from "./components/Home";
-import About from "./components/About";
 import CV from "./components/CV";
+import Contacts from "./components/Contacts";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Interests from "./components/Interests";
@@ -36,8 +36,8 @@ function App() {
         {showContent && activeContent === "home" && <Home />}
       </div>
       <div className="content">
-        {showContent && activeContent === "about" && <About />}
         {showContent && activeContent === "cv" && <CV />}
+        {showContent && activeContent === "contacts" && <Contacts />}
         {showContent && activeContent === "education" && <Education />}
         {showContent && activeContent === "experience" && <Experience />}
         {showContent && activeContent === "interests" && <Interests />}

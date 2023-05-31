@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+import curriculum from "../assets/images/CV Tiago Rato 2023.pdf";
+
 function MenuBox({
   menu,
   setMenu,
@@ -22,7 +24,7 @@ function MenuBox({
     setActiveContent("home");
     setTimeout(() => {
       setToggleMenu(!toggleMenu);
-    }, 650);
+    }, 0);
 
     setTimeout(() => {
       setShowTitle(!menu);
@@ -48,7 +50,7 @@ function MenuBox({
             }
             onClick={() => setTitle("What do you want to know about?")}
           >
-            {menu === false ? "ABOUT ME" : "About"}
+            {menu === false ? "ABOUT ME" : "Home"}
           </NavLink>
         </div>
         {toggleMenu && (
@@ -57,11 +59,13 @@ function MenuBox({
               style={{ "--i": 0 }}
               onClick={() => {
                 setToggleMenu(false), setShowTitle(false), setShowContent(true);
-                setActiveContent("about");
+                setActiveContent("home");
               }}
-              onMouseOver={() => handleMouseOver("About")}
+              onMouseOver={() => handleMouseOver("Download Cv")}
             >
-              <NavLink to="about">About</NavLink>
+              <NavLink to={curriculum} target="_blank" download>
+                Download CV
+              </NavLink>
             </li>
             <li
               style={{ "--i": 1 }}
@@ -85,18 +89,9 @@ function MenuBox({
             >
               <NavLink to="experience">Experience</NavLink>
             </li>
+
             <li
               style={{ "--i": 3 }}
-              onClick={() => {
-                setToggleMenu(false), setShowTitle(false), setShowContent(true);
-                setActiveContent("cv");
-              }}
-              onMouseOver={() => handleMouseOver("CV")}
-            >
-              <NavLink to="cv">CV</NavLink>
-            </li>
-            <li
-              style={{ "--i": 4 }}
               onClick={() => {
                 setToggleMenu(false), setShowTitle(false), setShowContent(true);
                 setActiveContent("interests");
@@ -104,6 +99,16 @@ function MenuBox({
               onMouseOver={() => handleMouseOver("Interests")}
             >
               <NavLink to="interests">Interests</NavLink>
+            </li>
+            <li
+              style={{ "--i": 4 }}
+              onClick={() => {
+                setToggleMenu(false), setShowTitle(false), setShowContent(true);
+                setActiveContent("contacts");
+              }}
+              onMouseOver={() => handleMouseOver("Contacts")}
+            >
+              <NavLink to="contacts">Contacts</NavLink>
             </li>
             {showTitle && (
               <div>
