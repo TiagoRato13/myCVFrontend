@@ -1,8 +1,26 @@
 import React, { useState, useEffect } from "react";
 import projectService from "../services/project.service";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+import { styled } from "@mui/material/styles";
+import Zoom from "@mui/material/Zoom";
+
+//COMPONENTS
+import scrollUp from "../assets/images/up-arrow.png";
+
+const BootstrapTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(() => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: "rgb(6, 75, 90)",
+    margin: "0 2vh 0 0 !important",
+    fontSize: "0.6em",
+    boxShadow: "0 0 15px 1px rgb(6, 75, 90)",
+  },
+}));
 
 function Experience() {
   const [experience, setExperience] = useState([]);
+  const [showButton, setShowButton] = useState(false);
 
   const getExperience = async () => {
     try {
@@ -12,8 +30,22 @@ function Experience() {
     } catch (error) {}
   };
 
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behaviour: "smooth" });
+  };
+
   useEffect(() => {
     getExperience();
+
+    const handleScrollButtonVisibility = () => {
+      window.pageYOffset > 800 ? setShowButton(true) : setShowButton(false);
+    };
+
+    window.addEventListener("scroll", handleScrollButtonVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollButtonVisibility);
+    };
   }, []);
 
   const ExperienceItem = ({ experience }) => {
@@ -52,7 +84,9 @@ function Experience() {
             </div>
           </div>
         </div>
-              <p className="experience-date"><span>From:</span> {experience.startDate} to {experience.endDate}</p>
+        <p className="experience-date">
+          <span>From:</span> {experience.startDate} to {experience.endDate}
+        </p>
 
         <div className="experience-tasks">
           {experience.tasks &&
@@ -65,12 +99,10 @@ function Experience() {
           {experience.skills &&
             experience.skills.map((skill, skillId) => {
               return (
-                <>
+                <div key={skillId} className="experience-skills">
                   {skillId === 0 ? "" : "|"}
-                  <p key={skillId} className="experience-skills-name">
-                    {skill}
-                  </p>
-                </>
+                  <p className="experience-skills-name">{skill}</p>
+                </div>
               );
             })}
         </div>
@@ -112,6 +144,14 @@ function Experience() {
       {experience.map((exp, id) => (
         <ExperienceItem key={id} experience={exp} />
       ))}
+
+      {showButton && (
+        <div className="scrollUp-button" onClick={handleScrollToTop}>
+          <BootstrapTooltip title="Go back up" placement="left-end">
+            <img src={scrollUp} alt="" />
+          </BootstrapTooltip>
+        </div>
+      )}
     </>
   );
 }

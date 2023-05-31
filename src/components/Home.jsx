@@ -16,7 +16,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
     backgroundColor: "rgb(6, 75, 90)",
     padding: "1.5vh",
     margin: "0 0 10vh 5vh !important",
-    "font-size": "14px",
+    fontSize: "14px",
   },
 }));
 
@@ -54,88 +54,56 @@ function Home() {
 
   return (
     <>
-      {home && (
+      {home && home.email && (
         <>
-          <section className="home_section_one">
-            <img src={home.picture} alt="" className="home_picture" />
-            <div>
-              {home.info &&
-                home.info.map((info, id) => {
-                  return <p key={id}>{info}</p>;
-                })}
-            </div>
+          <section className="home-section">
+            <h1>
+              Hey, I'm Tiago<span>.</span>
+            </h1>
+            <h3>
+              I'm a <span>Full Stack Developer</span>
+            </h3>
+            {home.info &&
+              home.info.map((info, infoId) => {
+                return (
+                  <p className="" key={infoId}>
+                    {info}
+                  </p>
+                );
+              })}
           </section>
-          <section className="home-info">
-            {home.linkedin && (
-              <NavLink
-                to={home.linkedin.link}
-                className="home-links"
-                target="_blank"
-                onMouseOver={() => handleMouseOver("linkedin")}
-                onMouseOut={() => handleMouseOut("linkedin")}
-              >
-                <img
-                  src={
-                    activeIcons["linkedin"]
-                      ? home.linkedin.image.active
-                      : home.linkedin.image.inactive
-                  }
-                  alt={home.linkedin.name}
-                />
-              </NavLink>
-            )}
-            {home.github && (
-              <NavLink
-                to={home.github.link}
-                target="_blank"
-                className="home-links"
-                onMouseOver={() => handleMouseOver("github")}
-                onMouseOut={() => handleMouseOut("github")}
-              >
-                <img
-                  src={
-                    activeIcons["github"]
-                      ? home.github.image.active
-                      : home.github.image.inactive
-                  }
-                  alt={home.github.name}
-                />
-              </NavLink>
-            )}
-          </section>
-          <section className="home-info">
+          <section className="home-contact">
             {home.email && (
               <>
-                <BootstrapTooltip
-                  title="Get in touch, send a message !"
-                  placement="right-start"
-                  arrow
-                  TransitionComponent={Zoom}
+                <NavLink
+                  to="mailto:tiagorato13@hotmail.com"
+                  className="home-email-box"
                 >
-                  <div
-                    className="home-email"
-                    onMouseOver={() => handleMouseOver("email")}
-                    onMouseOut={() => handleMouseOut("email")}
+                  <BootstrapTooltip
+                    title="That's the spirit 😎!"
+                    placement="right-start"
+                    arrow
+                    TransitionComponent={Zoom}
                   >
-                    <img
-                      src={
-                        activeIcons["email"]
-                          ? home.email.image.active
-                          : home.email.image.inactive
-                      }
-                      alt={home.email.name}
-                    />
+                    <div
+                      className="home-email"
+                      onMouseOver={() => handleMouseOver("email")}
+                      onMouseOut={() => handleMouseOut("email")}
+                    >
+                      <img
+                        src={
+                          activeIcons["email"]
+                            ? home.email.image.active
+                            : home.email.image.inactive
+                        }
+                        alt={home.email.name}
+                      />
 
-                    <p>{home.email.address}</p>
-                  </div>
-                </BootstrapTooltip>
+                      <p>Contact me</p>
+                    </div>
+                  </BootstrapTooltip>
+                </NavLink>
               </>
-            )}
-            {home.phone && (
-              <div>
-                <img src={home.phone.image.inactive} alt={home.phone.name} />
-                <p>{home.phone.number}</p>
-              </div>
             )}
           </section>
         </>

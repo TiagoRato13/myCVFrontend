@@ -30,12 +30,12 @@ function App() {
         {showContent && activeContent !== "home" && (
           <Title activeContent={activeContent} />
         )}
-        {showContent && activeContent === "home" && (
-          <Title activeContent="Hello, my name is Tiago. Welcome to my web CV" />
-        )}
+        {showContent && activeContent === "home" && <Title activeContent=" " />}
+      </div>
+      <div className="home-content">
+        {showContent && activeContent === "home" && <Home />}
       </div>
       <div className="content">
-        {showContent && activeContent === "home" && <Home />}
         {showContent && activeContent === "about" && <About />}
         {showContent && activeContent === "cv" && <CV />}
         {showContent && activeContent === "education" && <Education />}
