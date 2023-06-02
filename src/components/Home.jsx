@@ -5,7 +5,7 @@ import { styled } from "@mui/material/styles";
 import Zoom from "@mui/material/Zoom";
 
 /* COMPONENTS */
-import CV from "./Cv";
+import Cv from "./Cv";
 import projectService from "../services/project.service";
 /* END COMPONENTS */
 
@@ -25,7 +25,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
 }));
 /* END ON HOVER TEXT FOR CONTACT ME BUTTON */
 
-function Home({activeContent}) {
+function Home({ activeContent }) {
   const [home, setHome] = useState([]);
   const [activeIcons, setActiveIcons] = useState({});
 
@@ -112,7 +112,7 @@ function Home({activeContent}) {
             )}
           </section>
 
-          <CV activeContent={activeContent}/>
+          <Cv activeContent={activeContent} />
         </>
       )}
     </>

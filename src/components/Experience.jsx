@@ -12,7 +12,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
 ))(() => ({
   [`& .${tooltipClasses.tooltip}`]: {
     backgroundColor: "rgb(6, 75, 90)",
-    margin: "0 2vh 0 0 !important",
+    margin: "0 0 0 0 !important",
     fontSize: "0.6em",
     boxShadow: "0 0 15px 1px rgb(6, 75, 90)",
   },
@@ -147,7 +147,7 @@ function Experience() {
 
       {showButton && (
         <div className="scrollUp-button" onClick={handleScrollToTop}>
-          <BootstrapTooltip title="Go back up" placement="left-end">
+          <BootstrapTooltip title="Go back up" placement="bottom">
             <img src={scrollUp} alt="" />
           </BootstrapTooltip>
         </div>

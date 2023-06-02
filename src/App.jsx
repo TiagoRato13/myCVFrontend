@@ -35,7 +35,9 @@ function App() {
         {showContent && activeContent === "home" && <Title activeContent=" " />}
       </div>
       <div className="home-content">
-        {showContent && activeContent === "home" && <Home activeContent={activeContent}/>}
+        {showContent && activeContent === "home" && (
+          <Home activeContent={activeContent} />
+        )}
       </div>
       <div className="content">
         {showContent && activeContent === "projects" && <Projects />}
@@ -46,7 +48,14 @@ function App() {
       </div>
       <div>
         {showContent && activeContent !== "home" && (
-          <Footer activeContent={activeContent} />
+          <Footer
+            activeContent={activeContent}
+            menu={menu}
+            setMenu={setMenu}
+            showContent={showContent}
+            setShowContent={setShowContent}
+            setActiveContent={setActiveContent}
+          />
         )}
       </div>
     </div>

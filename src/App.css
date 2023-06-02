@@ -169,6 +169,22 @@ body {
   box-shadow: inset 5px 5px 20px 3px black;
   transition-duration: 1s;
 }
+
+.cv-page {
+  padding: 2vh 3vh;
+  font-size: 1.5em;
+  text-shadow: 0px 5px 3px #222327;
+  color: rgb(148, 223, 239);
+  font-weight: 500;
+  text-decoration: none;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.cv-page:hover {
+  color: white;
+  transition-duration: 1s;
+}
 /* --- END CV --- */
 
 /* --- TITLE --- */
@@ -194,10 +210,10 @@ body {
 /* --- END TITLE --- */
 /* --- CONTENT --- */
 .content {
-  position: absolute;
-  top: 25vh;
+  /* position: absolute;
+  top: 25vh; */
   color: white;
-  margin: 1vw 3vw;
+  margin: 15vw 3vw 30vh;
 }
 /* --- END CONTENT --- */
 
@@ -434,19 +450,21 @@ body {
   font-size: 1.3em;
   font-weight: 600;
   color: white;
+  text-shadow: 0 0 3vh #0a778f;
   transition-duration: 1s;
 }
 
 .photoButton:hover {
-  color: rgb(6, 75, 90);
+  color: #0a778f;
   text-shadow: 0 0 3vh grey;
   transition-duration: 1s;
 }
 
 .scrollUp-button {
   position: fixed;
-  bottom: 7vh;
-  right: 5vw;
+  z-index: 10;
+  bottom: 4.5vh;
+  right: 4vw;
   height: 8vh;
   background-color: transparent;
   cursor: pointer;
@@ -509,11 +527,28 @@ body {
 .footer {
   position: fixed;
   display: flex;
+  gap: 10vw;
   align-items: center;
   bottom: 0;
   width: 100vw;
-  height: 6vh;
+  height: 8vh;
   background-color: #064b5a;
   box-shadow: 0 0 20px 3px #0a778f;
+}
+
+.footer-contacts {
+  text-decoration: none;
+  text-shadow: 0px 5px 3px #222327;
+  color: rgb(148, 223, 239);
+  font-weight: 500;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.footer-contacts:hover {
+  color: white;
+  font-weight: 500;
+  transition-duration: 1s;
+  cursor: pointer;
 }
 /* --- END FOOTER --- */

@@ -7,7 +7,7 @@ function Cv({ activeContent }) {
     <section
       className={activeContent === "home" ? "cv-home-box" : "cv-page-box"}
     >
-      <NavLink to={curriculum} className="cv-home" target="_blank" download>
+      <NavLink to={curriculum} className={activeContent === "home" ? "cv-home" : "cv-page"} target="_blank" download>
         Download CV
       </NavLink>
     </section>
