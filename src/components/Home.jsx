@@ -25,7 +25,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
 }));
 /* END ON HOVER TEXT FOR CONTACT ME BUTTON */
 
-function Home() {
+function Home({activeContent}) {
   const [home, setHome] = useState([]);
   const [activeIcons, setActiveIcons] = useState({});
 
@@ -112,7 +112,7 @@ function Home() {
             )}
           </section>
 
-          <CV />
+          <CV activeContent={activeContent}/>
         </>
       )}
     </>

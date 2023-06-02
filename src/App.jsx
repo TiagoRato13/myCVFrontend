@@ -35,7 +35,7 @@ function App() {
         {showContent && activeContent === "home" && <Title activeContent=" " />}
       </div>
       <div className="home-content">
-        {showContent && activeContent === "home" && <Home />}
+        {showContent && activeContent === "home" && <Home activeContent={activeContent}/>}
       </div>
       <div className="content">
         {showContent && activeContent === "projects" && <Projects />}
@@ -44,7 +44,11 @@ function App() {
         {showContent && activeContent === "experience" && <Experience />}
         {showContent && activeContent === "interests" && <Interests />}
       </div>
-      <div>{showContent && activeContent !== "home" && <Footer activeContent={activeContent} />}</div>
+      <div>
+        {showContent && activeContent !== "home" && (
+          <Footer activeContent={activeContent} />
+        )}
+      </div>
     </div>
   );
 }
