@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 import "./App.css";
 import MenuBox from "./components/MenuBox";
@@ -12,10 +11,27 @@ import Interests from "./components/Interests";
 import Title from "./components/Title";
 import Footer from "./components/Footer";
 
+import projectService from "./services/project.service";
+
 function App() {
   const [menu, setMenu] = useState(false);
   const [activeContent, setActiveContent] = useState("home");
   const [showContent, setShowContent] = useState(true);
+  const [home, setHome] = useState([]);
+
+  const getHome = async () => {
+    try {
+      const response = await projectService.getHome();
+      console.log(response.data);
+      setHome(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getHome();
+  }, []);
 
   return (
     <div className="App">
@@ -36,12 +52,14 @@ function App() {
       </div>
       <div className="home-content">
         {showContent && activeContent === "home" && (
-          <Home activeContent={activeContent} />
+          <Home activeContent={activeContent} home={home} />
         )}
       </div>
       <div className="content">
         {showContent && activeContent === "projects" && <Projects />}
-        {showContent && activeContent === "contacts" && <Contacts />}
+        {showContent && activeContent === "contacts" && (
+          <Contacts home={home} />
+        )}
         {showContent && activeContent === "education" && <Education />}
         {showContent && activeContent === "experience" && <Experience />}
         {showContent && activeContent === "interests" && <Interests />}

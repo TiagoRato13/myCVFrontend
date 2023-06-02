@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-function Contacts() {
+import projectService from "../services/project.service";
+
+function Contacts({home}) {
+  
+
   return (
     <>
       <div>Secção Cv</div>

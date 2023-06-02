@@ -25,19 +25,8 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
 }));
 /* END ON HOVER TEXT FOR CONTACT ME BUTTON */
 
-function Home({ activeContent }) {
-  const [home, setHome] = useState([]);
+function Home({ activeContent, home }) {
   const [activeIcons, setActiveIcons] = useState({});
-
-  const getHome = async () => {
-    try {
-      const response = await projectService.getHome();
-      console.log(response.data);
-      setHome(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   const handleMouseOver = (iconName) => {
     setActiveIcons((prevActiveIcons) => ({
@@ -52,10 +41,6 @@ function Home({ activeContent }) {
       [iconName]: false,
     }));
   };
-
-  useEffect(() => {
-    getHome();
-  }, []);
 
   return (
     <>

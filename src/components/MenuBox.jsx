@@ -110,12 +110,20 @@ function MenuBox({
               <div>
                 <NavLink
                   className="menuName"
-                  to={`${title.toLowerCase()}`}
+                  to={
+                      title === "What do you want to know about?"
+                        ? `/`
+                        : `${title.toLowerCase()}`
+                    }
                   onClick={() => {
                     setToggleMenu(false),
                       setShowTitle(false),
                       setShowContent(true);
-                    setActiveContent(`${title.toLowerCase()}`);
+                    {
+                      title === "What do you want to know about?"
+                        ? setActiveContent(`home`)
+                        : setActiveContent(`${title.toLowerCase()}`);
+                    }
                   }}
                 >
                   <img
