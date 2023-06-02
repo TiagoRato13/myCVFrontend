@@ -1,50 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
-import { styled } from "@mui/material/styles";
-import Zoom from "@mui/material/Zoom";
 
 /* COMPONENTS */
 import Cv from "./Cv";
-import projectService from "../services/project.service";
+import EmailButton from "./EmailButton";
 /* END COMPONENTS */
 
-/* ON HOVER TEXT FOR CONTACT ME BUTTON */
-const BootstrapTooltip = styled(({ className, ...props }) => (
-  <Tooltip {...props} arrow classes={{ popper: className }} />
-))(() => ({
-  [`& .${tooltipClasses.arrow}`]: {
-    color: "rgb(6, 75, 90)",
-  },
-  [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: "rgb(6, 75, 90)",
-    padding: "1.5vh",
-    margin: "0 0 -2vh 2vh !important",
-    fontSize: "14px",
-  },
-}));
-/* END ON HOVER TEXT FOR CONTACT ME BUTTON */
-
-function Home({ activeContent, home }) {
-  const [activeIcons, setActiveIcons] = useState({});
-
-  const handleMouseOver = (iconName) => {
-    setActiveIcons((prevActiveIcons) => ({
-      ...prevActiveIcons,
-      [iconName]: true,
-    }));
-  };
-
-  const handleMouseOut = (iconName) => {
-    setActiveIcons((prevActiveIcons) => ({
-      ...prevActiveIcons,
-      [iconName]: false,
-    }));
-  };
+function Home({ activeContent, contacts }) {
+  useEffect(() => {
+    console.log(contacts);
+  }, []);
 
   return (
     <>
-      {home && home.email && (
+      {contacts && contacts.email && (
         <>
           <section className="home-section">
             <h1>
@@ -53,8 +21,8 @@ function Home({ activeContent, home }) {
             <h3>
               I'm a <span>Full Stack Developer</span>
             </h3>
-            {home.info &&
-              home.info.map((info, infoId) => {
+            {contacts.info &&
+              contacts.info.map((info, infoId) => {
                 return (
                   <p className="" key={infoId}>
                     {info}
@@ -62,8 +30,9 @@ function Home({ activeContent, home }) {
                 );
               })}
           </section>
-          <section className="home-contact">
-            {home.email && (
+          <EmailButton contacts={contacts} page={"home"} />
+          {/* <section className="home-contact">
+            {contacts.email && (
               <>
                 <NavLink
                   to="mailto:tiagorato13@hotmail.com"
@@ -83,10 +52,10 @@ function Home({ activeContent, home }) {
                       <img
                         src={
                           activeIcons["email"]
-                            ? home.email.image.active
-                            : home.email.image.inactive
+                            ? contacts.email.image.active
+                            : contacts.email.image.inactive
                         }
-                        alt={home.email.name}
+                        alt={contacts.email.name}
                       />
 
                       <p>Contact me</p>
@@ -95,7 +64,7 @@ function Home({ activeContent, home }) {
                 </NavLink>
               </>
             )}
-          </section>
+          </section> */}
 
           <Cv activeContent={activeContent} />
         </>

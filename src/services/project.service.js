@@ -40,7 +40,7 @@ class ProjectService {
   /* ------- HOME ------- */
   //Get Home
 
-  getHome = () => {
+  getContacts = () => {
     return this.api.get("/api/home");
   };
 
@@ -81,15 +81,6 @@ class ProjectService {
   };
 
   /* ----- END EXPERIENCE ----- */
-  
-  /* ------- CONTACTS ------- */
-  //Get Contacts
-
-  getContacts = () => {
-    return this.api.get("/api/contacts");
-  };
-
-  /* ----- END CONTACTS ----- */
 
   /* ----- CLOUDINARY ----- */
   uploadImage = (file) => {

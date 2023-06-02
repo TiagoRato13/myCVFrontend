@@ -17,20 +17,20 @@ function App() {
   const [menu, setMenu] = useState(false);
   const [activeContent, setActiveContent] = useState("home");
   const [showContent, setShowContent] = useState(true);
-  const [home, setHome] = useState([]);
+  const [contacts, setContacts] = useState([]);
 
-  const getHome = async () => {
+  const getContacts = async () => {
     try {
-      const response = await projectService.getHome();
+      const response = await projectService.getContacts();
       console.log(response.data);
-      setHome(response.data);
+      setContacts(response.data);
     } catch (error) {
       console.log(error);
     }
   };
 
   useEffect(() => {
-    getHome();
+    getContacts();
   }, []);
 
   return (
@@ -52,13 +52,13 @@ function App() {
       </div>
       <div className="home-content">
         {showContent && activeContent === "home" && (
-          <Home activeContent={activeContent} home={home} />
+          <Home activeContent={activeContent} contacts={contacts} />
         )}
       </div>
       <div className="content">
         {showContent && activeContent === "projects" && <Projects />}
         {showContent && activeContent === "contacts" && (
-          <Contacts home={home} />
+          <Contacts contacts={contacts} />
         )}
         {showContent && activeContent === "education" && <Education />}
         {showContent && activeContent === "experience" && <Experience />}

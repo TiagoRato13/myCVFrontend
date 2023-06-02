@@ -523,6 +523,18 @@ body {
 }
 /* --- END INTERESTS --- */
 
+/* --- CONTACTS --- */
+.contact-links img {
+  width: 5vh;
+}
+
+.contacts-phone {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+/* --- END CONTACTS --- */
+
 /* --- FOOTER --- */
 .footer {
   position: fixed;
