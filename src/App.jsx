@@ -10,8 +10,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Interests from "./components/Interests";
 import Title from "./components/Title";
-
-import curriculum from "./assets/images/CV Tiago Rato 2023.pdf";
+import Footer from "./components/Footer";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -29,12 +28,6 @@ function App() {
         setActiveContent={setActiveContent}
       />
 
-      {showContent && (
-        <NavLink to={curriculum} target="_blank" download>
-          Download CV
-        </NavLink>
-      )}
-
       <div className={` ${activeContent !== "home" ? "title" : "titleHome"}`}>
         {showContent && activeContent !== "home" && (
           <Title activeContent={activeContent} />
@@ -51,6 +44,7 @@ function App() {
         {showContent && activeContent === "experience" && <Experience />}
         {showContent && activeContent === "interests" && <Interests />}
       </div>
+      <div>{showContent && activeContent !== "home" && <Footer activeContent={activeContent} />}</div>
     </div>
   );
 }

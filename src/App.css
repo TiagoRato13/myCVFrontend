@@ -136,6 +136,41 @@ body {
   opacity: 1;
 }
 
+/* --- END MENU --- */
+
+/* --- CV --- */
+.cv-home-box {
+  margin: 4vh 0 0;
+}
+
+/* .cv-page-box {
+  margin: 20vh;
+} */
+
+.cv-home {
+  background-color: rgb(6, 75, 90);
+  border: 3px solid rgb(6, 75, 90);
+  border-radius: 10px;
+  max-width: 180px;
+  box-shadow: inset 5px 5px 20px 3px black;
+  text-align: center;
+  padding: 2vh 3vh;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.cv-home:hover {
+  border: 3px solid white;
+  background-color: white;
+  color: rgb(6, 75, 90);
+  box-shadow: inset 5px 5px 20px 3px black;
+  transition-duration: 1s;
+}
+/* --- END CV --- */
+
 /* --- TITLE --- */
 .title {
   color: white;
@@ -426,9 +461,6 @@ body {
 
 /* --- END EXPERIENCE --- */
 
-/* --- CV --- */
-/* --- END CV --- */
-
 /* --- INTERESTS --- */
 
 .interest {
@@ -472,3 +504,16 @@ body {
   box-shadow: 0 0 15px #064b5a;
 }
 /* --- END INTERESTS --- */
+
+/* --- FOOTER --- */
+.footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  width: 100vw;
+  height: 6vh;
+  background-color: #064b5a;
+  box-shadow: 0 0 20px 3px #0a778f;
+}
+/* --- END FOOTER --- */

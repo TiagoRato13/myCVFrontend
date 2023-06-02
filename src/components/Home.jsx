@@ -4,8 +4,12 @@ import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material/styles";
 import Zoom from "@mui/material/Zoom";
 
+/* COMPONENTS */
+import CV from "./Cv";
 import projectService from "../services/project.service";
+/* END COMPONENTS */
 
+/* ON HOVER TEXT FOR CONTACT ME BUTTON */
 const BootstrapTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} arrow classes={{ popper: className }} />
 ))(() => ({
@@ -19,6 +23,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
     fontSize: "14px",
   },
 }));
+/* END ON HOVER TEXT FOR CONTACT ME BUTTON */
 
 function Home() {
   const [home, setHome] = useState([]);
@@ -106,6 +111,8 @@ function Home() {
               </>
             )}
           </section>
+
+          <CV />
         </>
       )}
     </>
