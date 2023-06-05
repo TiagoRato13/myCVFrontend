@@ -141,6 +141,7 @@ body {
 /* --- CV --- */
 .cv-home-box {
   margin: 4vh 0 0;
+  width: fit-content;
 }
 
 .cv-page-box {
@@ -210,10 +211,8 @@ body {
 /* --- END TITLE --- */
 /* --- CONTENT --- */
 .content {
-  /* position: absolute;
-  top: 25vh; */
   color: white;
-  margin: 15vw 3vw 30vh;
+  margin: 13vw 3vw 15vh;
 }
 /* --- END CONTENT --- */
 
@@ -245,6 +244,7 @@ body {
 
 .home-contact {
   margin-top: 4vh;
+  width: fit-content;
 }
 
 .home-email-box {
@@ -259,6 +259,7 @@ body {
   border: 3px solid rgb(6, 75, 90);
   border-radius: 10px;
   max-width: 180px;
+  width: fit-content;
   box-shadow: inset 5px 5px 20px 3px black;
   text-align: center;
   padding: 1vh 2vh;
@@ -524,14 +525,50 @@ body {
 /* --- END INTERESTS --- */
 
 /* --- CONTACTS --- */
+
+.contact-links {
+  border: 3px solid #0a778f;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px 3px #0a778f;
+  border-radius: 5%;
+  min-width: 20vw;
+  max-width: 40vw;
+  padding: 5vh;
+  margin: auto;
+}
+
 .contact-links img {
   width: 5vh;
+}
+
+.contacts-links-social {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+
+.contacts-links-social img,
+.contacts-phone img {
+  width: 7vh;
+}
+
+.hr {
+  width: 30%;
+  border: 1px solid white;
+  box-shadow: 0 0 20px 10px #0a778f;
+  margin: 5vh auto;
 }
 
 .contacts-phone {
   display: flex;
   align-items: center;
-  gap: 1.5vw;
+  margin-left: 3vw;
+  gap: 2vw;
+  font-size: 3vh;
+}
+
+.contacts-email {
+  width: auto;
 }
 /* --- END CONTACTS --- */
 
