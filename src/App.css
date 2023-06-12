@@ -114,7 +114,7 @@ body {
   position: absolute;
   text-decoration: none;
   text-align: center;
-  top: -30vh;
+  top: -19vh;
   left: 30vw;
   width: 50vw;
   font-size: 4rem;
@@ -258,7 +258,7 @@ body {
   background-color: rgb(6, 75, 90);
   border: 3px solid rgb(6, 75, 90);
   border-radius: 10px;
-  max-width: 180px;
+  min-width: 180px;
   width: fit-content;
   box-shadow: inset 5px 5px 20px 3px black;
   text-align: center;
@@ -582,7 +582,7 @@ body {
   width: 100vw;
   height: 8vh;
   background-color: #064b5a;
-  box-shadow: 0 0 20px 3px #0a778f;
+  box-shadow: 0 0 7px 3px #0a778f;
 }
 
 .footer-contacts {

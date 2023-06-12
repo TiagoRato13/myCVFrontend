@@ -67,7 +67,7 @@ function EmailButton({ contacts, page }) {
                   alt={contacts.email.name}
                 />
 
-                <p>{page === "contacts" ? "Send an Email" : "Contact me"}</p>
+                <p>{page === "contacts" ? "tiagorato@hotmail.com" : "Contact me"}</p>
               </div>
             </BootstrapTooltip>
           </NavLink>
