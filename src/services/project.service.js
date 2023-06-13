@@ -67,8 +67,8 @@ class ProjectService {
   /* ------- PROJECTS ------- */
   //Get Projects
 
-  getProjects = () => {
-    return this.api.get("/api/projects");
+  getProject = () => {
+    return this.api.get("/api/project");
   };
 
   /* ----- END PROJECTS ----- */

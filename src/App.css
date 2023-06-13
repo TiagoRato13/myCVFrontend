@@ -212,7 +212,7 @@ body {
 /* --- CONTENT --- */
 .content {
   color: white;
-  margin: 13vw 3vw 15vh;
+  margin: 18vw 3vw 15vh;
 }
 /* --- END CONTENT --- */
 
@@ -287,8 +287,71 @@ body {
 
 /* --- END HOME --- */
 
-/* --- ABOUT --- */
-/* --- END ABOUT --- */
+/* --- PROJECTS --- */
+.project-box {
+  display: inline-block;
+  width: 40vw;
+  padding: 1vh;
+  margin: 3vh 2vw;
+  border: 1px solid #0a778f;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #064b5a;
+  box-shadow: 0 0 20px 3px #064b5a;
+  text-align: center;
+}
+
+.project-box img {
+  width: 100%;
+  height: 3%;
+}
+
+.project-box h3 {
+  margin: 2vh 1vh;
+  text-align: left;
+  color: #222327;
+  font-weight: bold;
+  text-shadow: 0 0 0.5vh white;
+}
+
+.tech-used {
+  text-decoration: underline #222327;
+  text-underline-offset: 0.5vh;
+  text-align: center;
+  margin: 3vh auto 0;
+}
+
+.project-box p {
+  width: 80%;
+  margin: 0 auto 3vh;
+}
+
+.project-box .even {
+  color: #222327;
+  font-weight: bold;
+}
+
+.project-box .odd {
+  color: #1ea3c1;
+}
+
+.tech-link {
+  text-decoration: none;
+  color: #222327;
+  transition-duration: 1s;
+}
+
+.tech-link:hover {
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.tech-link:active {
+  text-shadow: 0 0 10px #222327;
+  transition-duration: 0s;
+}
+
+/* --- END PROJECTS --- */
 
 /* --- EDUCATION --- */
 .educationInfo {
