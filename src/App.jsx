@@ -50,11 +50,11 @@ function App() {
         )}
         {showContent && activeContent === "home" && <Title activeContent=" " />}
       </div>
-      <div className="home-content">
-        {showContent && activeContent === "home" && (
+      {showContent && activeContent === "home" && (
+        <div className="home-content">
           <Home activeContent={activeContent} contacts={contacts} />
-        )}
-      </div>
+        </div>
+      )}
       <div className="content">
         {showContent && activeContent === "projects" && <Projects />}
         {showContent && activeContent === "contacts" && (

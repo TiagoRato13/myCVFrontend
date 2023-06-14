@@ -1,26 +1,10 @@
 import React, { useState, useEffect } from "react";
 import projectService from "../services/project.service";
-import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
-import { styled } from "@mui/material/styles";
-import Zoom from "@mui/material/Zoom";
-
-//COMPONENTS
-import scrollUp from "../assets/images/up-arrow.png";
-
-const BootstrapTooltip = styled(({ className, ...props }) => (
-  <Tooltip {...props} classes={{ popper: className }} />
-))(() => ({
-  [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: "rgb(6, 75, 90)",
-    margin: "0 0 0 0 !important",
-    fontSize: "0.6em",
-    boxShadow: "0 0 15px 1px rgb(6, 75, 90)",
-  },
-}));
 
 function Experience() {
+  const photos = window.innerWidth <= 980 ? 1 : 3;
   const [experience, setExperience] = useState([]);
-  const [showButton, setShowButton] = useState(false);
+  const [visiblePhotos, setVisiblePhotos] = useState(photos);
 
   const getExperience = async () => {
     try {
@@ -30,27 +14,29 @@ function Experience() {
     } catch (error) {}
   };
 
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behaviour: "smooth" });
-  };
-
   useEffect(() => {
     getExperience();
 
-    const handleScrollButtonVisibility = () => {
-      window.pageYOffset > 800 ? setShowButton(true) : setShowButton(false);
+    const handleResize = () => {
+      // Update visiblePhotos based on screen size
+      if (window.innerWidth <= 980) {
+        setVisiblePhotos(1);
+      } else {
+        setVisiblePhotos(3);
+      }
     };
 
-    window.addEventListener("scroll", handleScrollButtonVisibility);
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
 
+    // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener("scroll", handleScrollButtonVisibility);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   const ExperienceItem = ({ experience }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const visiblePhotos = 3;
 
     const handlePrevious = () => {
       setCurrentIndex((prevIndex) =>
@@ -144,14 +130,6 @@ function Experience() {
       {experience.map((exp, id) => (
         <ExperienceItem key={id} experience={exp} />
       ))}
-
-      {showButton && (
-        <div className="scrollUp-button" onClick={handleScrollToTop}>
-          <BootstrapTooltip title="Go back up" placement="bottom">
-            <img src={scrollUp} alt="" />
-          </BootstrapTooltip>
-        </div>
-      )}
     </>
   );
 }

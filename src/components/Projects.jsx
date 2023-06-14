@@ -22,7 +22,7 @@ function Projects() {
   }, []);
 
   return (
-    <>
+    <section className="projects">
       {projects.length &&
         projects.map((project, projectId) => {
           return (
@@ -43,13 +43,18 @@ function Projects() {
                   );
                 })}
               </p>
-              <NavLink to={project.link} className="tech-link" target="_blank" key={projectId}>
-                {">>>>"} Click here to check project {"<<<<"}
+              <NavLink
+                to={project.link}
+                className="tech-link"
+                target="_blank"
+                key={projectId}
+              >
+                {">>>"} Click here to check project {"<<<"}
               </NavLink>
             </div>
           );
         })}
-    </>
+    </section>
   );
 }
 

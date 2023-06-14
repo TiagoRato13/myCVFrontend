@@ -288,6 +288,10 @@ body {
 /* --- END HOME --- */
 
 /* --- PROJECTS --- */
+.projects {
+  text-align: center;
+}
+
 .project-box {
   display: inline-block;
   width: 40vw;
@@ -384,19 +388,26 @@ body {
 }
 
 .education-projects {
-  display: flex;
-  justify-content: space-evenly;
   gap: 2vw;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.education-school {
+  display: inline-flex;
 }
 
 .separator {
   margin-bottom: 4vh;
   text-align: center;
+  width: 28vw;
+  padding: 0 4vh;
 }
 
-.vertSeparator {
-  border-right: 1px solid rgb(6, 75, 90);
-  padding-right: 2vw;
+.separator-vert {
+  width: 1px;
+  border-right: 1px solid #064b5a;
+  margin: 10vh 0;
 }
 
 .project-link {
@@ -407,7 +418,8 @@ body {
 }
 
 .project-image {
-  width: 28vw;
+  min-width: 22vw;
+  max-width: 24vw;
   margin: 3vh 0 5vh 0;
 }
 
@@ -432,7 +444,7 @@ body {
 
 /* --- EXPERIENCE --- */
 .experience-box {
-  margin-bottom: 10vh;
+  margin: 10vh;
 }
 
 .experience-header {
@@ -493,13 +505,11 @@ body {
 
 .experience-photo-box {
   margin: auto;
-  width: 90vw;
-
   text-align: center;
 }
 
 .experience-company-photo {
-  max-width: 25vw;
+  max-width: 22vw;
   max-height: 30vh;
   margin: 0 1vw;
   border: 0.15vw solid rgb(6, 75, 90);
@@ -664,3 +674,290 @@ body {
   cursor: pointer;
 }
 /* --- END FOOTER --- */
+
+@media only screen and (max-width: 1100px) {
+  .home-content {
+    min-height: 70vh;
+  }
+
+  .project-box h3 {
+    font-size: 24px;
+  }
+
+  .project-box p {
+    font-size: 13px;
+  }
+
+  .scrollUp-button {
+    bottom: 3.3vh;
+  }
+
+  .cv-page {
+    font-size: 1.2em;
+  }
+
+  .tech-link {
+    font-size: 14px;
+  }
+
+  .separator {
+    padding: 2vh;
+  }
+}
+
+@media only screen and (max-width: 981px) {
+  .home-content {
+    top: 22vh;
+    width: 40vw;
+  }
+
+  .project-box h3 {
+    font-size: 22px;
+  }
+
+  .project-box p {
+    width: 90%;
+  }
+
+  .scrollUp-button {
+    bottom: 3vh;
+  }
+
+  .title h1 {
+    font-size: 4em;
+  }
+
+  .project-technologies {
+    font-size: 12px;
+  }
+
+  .bot-separator {
+    border-bottom: 1px solid #064b5a;
+  }
+
+  .education-projects {
+    border-bottom: 0px;
+  }
+
+  .separator {
+    margin-bottom: 4vh;
+    width: 65vw;
+    padding: 0 4vh 3vh 4vh;
+  }
+
+  .separator-vert {
+    width: 1px;
+    border-right: 0px;
+    margin: 10vh 0;
+  }
+
+  .project-image {
+    min-width: 46vw;
+    max-width: 48vw;
+  }
+
+  .menuName {
+    font-size: 3rem;
+  }
+
+  .experience-company-photo {
+    max-width: 69vw;
+    max-height: 50vh;
+    margin: 2vh;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .content {
+    margin: 22vw 3vw 15vh;
+  }
+
+  .menu {
+    left: 80vw;
+  }
+
+  .home-content {
+    left: 20vh;
+    width: 60vw;
+  }
+
+  .title h1 {
+    font-size: 3.5em;
+  }
+
+  .projects {
+    text-align: center;
+  }
+
+  .project-box {
+    width: 60vw;
+    margin: 10vh auto 0;
+  }
+
+  .scrollUp-button {
+    bottom: 4vh;
+  }
+
+  .scrollUp-button img {
+    width: 6vw;
+  }
+
+  .education-schoolImage {
+    width: 8vw;
+  }
+
+  .experience-company-img {
+    width: 15%;
+  }
+
+  .contact-links {
+    max-width: 50vw;
+    padding: 4vh;
+    margin-top: 35vh;
+  }
+
+  .contact-links img {
+    width: 5vh;
+  }
+
+  .contacts-phone {
+    font-size: 2vh;
+  }
+
+  .hr {
+    width: 40%;
+    margin: 2vh auto;
+  }
+}
+
+@media only screen and (max-width: 651px) {
+  .content {
+    margin: 28vw 3vw 15vh;
+  }
+
+  .menuName {
+    top: -15vh;
+    left: 35vw;
+    font-size: 2rem;
+  }
+
+  .project-box {
+    width: 80vw;
+  }
+
+  .scrollUp-button {
+    bottom: 3.3vh;
+  }
+
+  .scrollUp-button img {
+    width: 7vw;
+  }
+
+  .separator {
+    margin-bottom: 4vh;
+    width: 85vw;
+    padding: 0vh 3vh 4vh;
+  }
+
+  .project-image {
+    min-width: 56vw;
+    max-width: 68vw;
+  }
+
+  .experience-box {
+    margin: 5vh 2vh;
+  }
+
+  .contact-links {
+    max-width: 60vw;
+    padding: 3vh;
+  }
+
+  .scrollUp-button {
+    right: 6vw;
+    bottom: 4.2vh;
+  }
+
+  .scrollUp-button img {
+    width: 8vw;
+  }
+
+  .footer-contacts {
+    font-size: 14px;
+  }
+
+  .cv-page-box {
+    margin: 0;
+  }
+
+  .cv-page {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 551px) {
+  .content {
+    margin: 35vw 3vw 15vh;
+  }
+
+  .menu {
+    left: 75vw;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .toggle {
+    min-width: 15vh;
+    min-height: 15vh;
+  }
+
+  .menu .toggle.active {
+    box-shadow: 0 0 20px 95px #0a778f, inset 0 0 30px 5px black;
+  }
+
+  .menu li {
+    transform: translate(-25%, -50%)
+      rotate(calc(200deg / 5 * var(--i) + 280deg)) translateX(100px);
+    transform-origin: center;
+  }
+
+  .home-content {
+    top: 20vh;
+    left: 10vh;
+    width: 70vw;
+  }
+
+  .menuName {
+    left: 40vw;
+    font-size: 2rem;
+  }
+
+  .title {
+    top: 11vh;
+    left: 10vw;
+  }
+
+  .title h1 {
+    font-size: 3em;
+  }
+
+  .education-schoolImage {
+    width: 12vw;
+  }
+
+  .educationInfo-date {
+    font-size: 0.9em;
+  }
+
+  .scrollUp-button {
+    bottom: 3.5vh;
+  }
+
+  .scrollUp-button img {
+    width: 9vw;
+  }
+}
+
+/* END CSS */

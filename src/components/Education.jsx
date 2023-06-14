@@ -51,38 +51,47 @@ function Education() {
               >
                 {bootcamp.project.map((project, projectId) => {
                   return (
-                    <div
-                      className={`separator ${
-                        projectId < bootcamp.project.length - 1 ? "vertSeparator" : ""
-                      }`}
-                      key={projectId}
-                    >
-                      <NavLink
-                        to={project.link}
-                        target="_blank"
-                        className="project-link"
+                    <div className="education-school">
+                      <div
+                        className={`${
+                          bootcamp.project.length > 1 ? "separator" : ""
+                        } ${
+                          projectId !== bootcamp.project.length - 1
+                            ? "bot-separator"
+                            : ""
+                        }`}
+                        key={projectId}
                       >
-                        <div>{project.name}</div>
-                        <img
-                          className="project-image"
-                          src={project.image}
-                          alt={project.name}
-                        />
-                      </NavLink>
-                      <div>
-                        <ul>Technologies used:</ul>
-                        <div className="project-technologies">
-                          {project.technology &&
-                            project.technology.map((tech, techId) => {
-                              return (
-                                <>
-                                  {techId === 0 ? "" : "|"}
-                                  <li key={techId}>{tech}</li>
-                                </>
-                              );
-                            })}
+                        <NavLink
+                          to={project.link}
+                          target="_blank"
+                          className="project-link"
+                        >
+                          <div>{project.name}</div>
+                          <img
+                            className="project-image"
+                            src={project.image}
+                            alt={project.name}
+                          />
+                        </NavLink>
+                        <div>
+                          <ul>Technologies used:</ul>
+                          <div className="project-technologies">
+                            {project.technology &&
+                              project.technology.map((tech, techId) => {
+                                return (
+                                  <>
+                                    {techId === 0 ? "" : "|"}
+                                    <li key={techId}>{tech}</li>
+                                  </>
+                                );
+                              })}
+                          </div>
                         </div>
                       </div>
+                      {projectId < bootcamp.project.length - 1 && (
+                        <div className="separator-vert"></div>
+                      )}
                     </div>
                   );
                 })}
