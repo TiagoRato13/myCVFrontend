@@ -45,6 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: 2.5s;
+  z-index: 10;
 }
 
 .menu.active {
@@ -212,7 +213,7 @@ body {
 /* --- CONTENT --- */
 .content {
   color: white;
-  margin: 18vw 3vw 15vh;
+  margin: 15vw 3vw 15vw;
 }
 /* --- END CONTENT --- */
 
@@ -501,6 +502,7 @@ body {
 
 .experience-skills-name {
   color: white;
+  font-size: 15px;
 }
 
 .experience-photo-box {
@@ -537,7 +539,7 @@ body {
 .scrollUp-button {
   position: fixed;
   z-index: 10;
-  bottom: 4.5vh;
+  bottom: 4.2vh;
   right: 4vw;
   height: 8vh;
   background-color: transparent;
@@ -767,7 +769,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 781px) {
   .content {
     margin: 22vw 3vw 15vh;
   }
@@ -792,6 +794,20 @@ body {
   .project-box {
     width: 60vw;
     margin: 10vh auto 0;
+  }
+
+  .experience-tasks {
+    margin: 5vh 0 2vh 3vw;
+  }
+
+  .experience-skills {
+    gap: 1vw;
+    margin: 0;
+  }
+
+  .experience-skills-name {
+    font-size: 14px;
+    margin: 0;
   }
 
   .scrollUp-button {
@@ -908,11 +924,6 @@ body {
     left: 0;
   }
 
-  .toggle {
-    min-width: 15vh;
-    min-height: 15vh;
-  }
-
   .menu .toggle.active {
     box-shadow: 0 0 20px 95px #0a778f, inset 0 0 30px 5px black;
   }
@@ -927,6 +938,10 @@ body {
     top: 20vh;
     left: 10vh;
     width: 70vw;
+  }
+
+  .home-section h1 {
+    font-size: 4em;
   }
 
   .menuName {
@@ -960,4 +975,199 @@ body {
   }
 }
 
+@media only screen and (max-width: 451px) {
+  .content {
+    margin: 40vw 3vw 15vh;
+  }
+
+  .toggle {
+    min-width: 15vh;
+    min-height: 15vh;
+    font-size: 13px;
+  }
+
+  .menu li {
+    transform: translate(-25%, -50%)
+      rotate(calc(200deg / 5 * var(--i) + 280deg)) translateX(90px);
+    transform-origin: center;
+  }
+
+  .home-content {
+    left: 5vh;
+    width: 85vw;
+  }
+
+  .menuName {
+    top: 25vh;
+    left: 15vw;
+    width: 70vw;
+  }
+
+  .title {
+    top: 9.5vh;
+  }
+
+  .scrollUp-button {
+    bottom: 4vh;
+  }
+
+  .scrollUp-button img {
+    width: 10vw;
+  }
+
+  .home-email p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 401px) {
+  .scrollUp-button {
+    bottom: 3.7vh;
+    right: 4vw;
+  }
+
+  .scrollUp-button img {
+    width: 11vw;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .home-content {
+    top: 10vh;
+    left: 3vh;
+    width: 90vw;
+  }
+
+  .home-section h1 {
+    font-size: 3.5em;
+  }
+
+  .menuName {
+    left: 5vw;
+    width: 90vw;
+  }
+
+  .title {
+    left: 5vw;
+  }
+
+  .title h1 {
+    font-size: 2.7em;
+  }
+
+  .separator {
+    width: 90vw;
+    padding: 0 0 2vh 0;
+  }
+
+  .project-image {
+    min-width: 76vw;
+    max-width: 88vw;
+  }
+
+  .contact-links {
+    max-width: 80vw;
+  }
+
+  .contacts-links-social img {
+    width: 5vh;
+  }
+
+  .home-email img {
+    width: 7vw;
+  }
+
+  .home-email p {
+    font-size: 12px;
+  }
+
+  .scrollUp-button {
+    bottom: 3.5vh;
+  }
+
+  .scrollUp-button img {
+    width: 12vw;
+  }
+
+  .footer {
+    gap: 0vw;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .content {
+    margin: 53vw 3vw 15vh;
+  }
+
+  .home-content {
+    top: 22vh;
+    left: 2vh;
+    width: 93vw;
+  }
+
+  .menu {
+    left: 72vw;
+  }
+  .home-section h1 {
+    font-size: 4em;
+  }
+
+  .home-section p {
+    font-size: 14px;
+  }
+
+  .menuName {
+    font-size: 2.7em;
+  }
+
+  .title {
+    top: 11vh;
+  }
+
+  .title h1 {
+    font-size: 2.4em;
+  }
+
+  .project-box {
+    margin: 3vh 0vw;
+  }
+
+  .separator {
+    width: 90vw;
+    padding: 0 0 2vh 0;
+  }
+
+  .project-image {
+    min-width: 76vw;
+    max-width: 88vw;
+  }
+
+  .contact-links {
+    max-width: 80vw;
+  }
+
+  .contacts-links-social img {
+    width: 5vh;
+  }
+
+  .home-email img {
+    width: 7vw;
+  }
+
+  .home-email p {
+    font-size: 12px;
+  }
+
+  .scrollUp-button {
+    bottom: 3.2vh;
+  }
+
+  .scrollUp-button img {
+    width: 13vw;
+  }
+
+  .footer {
+    gap: 0vw;
+  }
+}
 /* END CSS */
