@@ -51,7 +51,7 @@ body {
 .menu.active {
   transform: rotate(360deg);
   top: 30vh;
-  left: 7vw;
+  left: 5vw;
   transition: 1.5s ease-in-out;
 }
 
@@ -851,8 +851,23 @@ body {
     margin: 28vw 3vw 15vh;
   }
 
+  .menu.active {
+    left: 0;
+  }
+
+  .menu .toggle.active {
+    box-shadow: 0 0 20px 105px #0a778f, inset 0 0 30px 5px black;
+  }
+
+  .menu li {
+    transform: translate(-25%, -50%)
+      rotate(calc(200deg / 5 * var(--i) + 280deg)) translateX(110px);
+    transform-origin: center;
+    font-size: 1em;
+  }
+
   .menuName {
-    top: -15vh;
+    top: -10vh;
     left: 35vw;
     font-size: 2rem;
   }
@@ -928,10 +943,15 @@ body {
     box-shadow: 0 0 20px 95px #0a778f, inset 0 0 30px 5px black;
   }
 
+  .menu .toggle.active {
+    box-shadow: 0 0 20px 95px #0a778f, inset 0 0 30px 5px black;
+  }
+
   .menu li {
     transform: translate(-25%, -50%)
-      rotate(calc(200deg / 5 * var(--i) + 280deg)) translateX(100px);
+      rotate(calc(200deg / 5 * var(--i) + 280deg)) translateX(110px);
     transform-origin: center;
+    font-size: 0.9em;
   }
 
   .home-content {
@@ -986,10 +1006,15 @@ body {
     font-size: 13px;
   }
 
+  .menu .toggle.active {
+    box-shadow: 0 0 20px 90px #0a778f, inset 0 0 30px 5px black;
+  }
+
   .menu li {
     transform: translate(-25%, -50%)
-      rotate(calc(200deg / 5 * var(--i) + 280deg)) translateX(90px);
+      rotate(calc(200deg / 5 * var(--i) + 280deg)) translateX(95px);
     transform-origin: center;
+    font-size: 0.8em;
   }
 
   .home-content {
@@ -1021,7 +1046,7 @@ body {
 }
 
 @media only screen and (max-width: 401px) {
-  .scrollUp-button {
+  z.scrollUp-button {
     bottom: 3.7vh;
     right: 4vw;
   }
@@ -1114,10 +1139,6 @@ body {
 
   .home-section p {
     font-size: 14px;
-  }
-
-  .menuName {
-    font-size: 2.7em;
   }
 
   .title {
