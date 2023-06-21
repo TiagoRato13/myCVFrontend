@@ -45,9 +45,9 @@ function Interests() {
             >
               <div className="interest">
                 {interestId === interest._id ? (
-                  <img src={interest.activeIcon} alt={interest.name} />
+                  <img src={interest.activeIcon} alt={interest.name} className="interest-activeIcon"/>
                 ) : (
-                  <img src={interest.inactiveIcon} alt={interest.name} />
+                  <img src={interest.inactiveIcon} alt={interest.name} className="interest-inactiveIcon" />
                 )}
 
                 <h3 className="interest_section">{interest.name}</h3>
