@@ -572,6 +572,10 @@ body {
   background-color: transparent;
 }
 
+.interest-photos {
+  text-align: center;
+}
+
 .interest_adicionalInfo {
   margin: auto 10vw;
 }
@@ -585,7 +589,8 @@ body {
 }
 
 .interest_pictures img {
-  width: 25vw;
+  width: 30%;
+  height: max-content;
   box-shadow: 0 0 15px #064b5a;
 }
 /* --- END INTERESTS --- */
