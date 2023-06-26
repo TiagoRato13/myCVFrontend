@@ -559,17 +559,40 @@ body {
   color: rgb(6, 75, 90);
 }
 
+.interest-activeIcon {
+  width: 8vw;
+  height: 8vw;
+  margin: 0 50px 0 0;
+  background-color: transparent;
+}
+
 .interest-inactiveIcon {
   width: 40px;
   margin: 0 20px 0 0;
   background-color: transparent;
 }
 
-.interest-activeIcon {
-  width: 8vw;
-  height: 8vw;
-  margin: 0 50px 0 0;
+.interest-photoButtons {
+  text-align: center;
+  margin: 2vh 0 1vh 0;
+}
+
+.interestPhotoButton {
+  padding: 0.5vh 1vw;
   background-color: transparent;
+  border: none;
+  margin: 0 2vw 0;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 3vh #0a778f;
+  transition-duration: 1s;
+}
+
+.photoButton:hover {
+  color: #0a778f;
+  text-shadow: 0 0 3vh grey;
+  transition-duration: 1s;
 }
 
 .interest-photos {
@@ -795,6 +818,12 @@ body {
     max-height: 50vh;
     margin: 2vh;
   }
+
+  /*  --- INTERESTS --- */
+  .interest_pictures img {
+    width: 50%;
+  }
+  /*  --- END INTERESTS --- */
 }
 
 @media only screen and (max-width: 781px) {
@@ -1023,6 +1052,13 @@ body {
   .educationInfo-date {
     font-size: 0.9em;
   }
+
+  
+  /*  --- INTERESTS --- */
+  .interest_pictures img {
+    width: 70%;
+  }
+  /*  --- END INTERESTS --- */
 
   .scrollUp-button {
     bottom: 3.5vh;

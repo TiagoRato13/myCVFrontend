@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-/* COMPONENTS */
 import projectService from "../services/project.service";
 
 function Interests() {
@@ -70,7 +69,7 @@ function Interests() {
 
     return (
       <>
-        <section id={interest._id}>
+        <section id={interest._id} data-aos="fade-up">
           <div
             className="interest"
             onClick={() => handleToggleInterest(interest._id)}
@@ -91,7 +90,7 @@ function Interests() {
 
             <h3 className="interest_section">{interest.name}</h3>
           </div>
-          <div className="interest-photos">
+          <div className="interest-textBox">
             {interestId === interest._id && (
               <>
                 {interest.aditionalInfo.map((info, id) => {
@@ -100,22 +99,27 @@ function Interests() {
                       <span className="paragraph"></span>
                       {info}
                       <br />
-                      <br />
                     </p>
                   );
                 })}
-                {interest.pictures.length > 0 && (
-                  <>
-                    <br />
-
-                    <button className="photoButton" onClick={handlePrevious}>
-                      &lt; previous
-                    </button>
-                    <button className="photoButton" onClick={handleNext}>
-                      next &gt;
-                    </button>
-                  </>
-                )}
+                <div className="interest-photoButtons">
+                  {interest.pictures.length > 0 && (
+                    <>
+                      <button
+                        className="interestPhotoButton"
+                        onClick={handlePrevious}
+                      >
+                        &lt; previous
+                      </button>
+                      <button
+                        className="interestPhotoButton"
+                        onClick={handleNext}
+                      >
+                        next &gt;
+                      </button>
+                    </>
+                  )}
+                </div>
                 <section className="interest_pictures">
                   {interest.pictures
                     .slice(currentIndex, currentIndex + visiblePhotos)
