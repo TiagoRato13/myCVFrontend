@@ -113,10 +113,25 @@ function Experience() {
             <>
               <br />
 
-              <button className="photoButton" onClick={handlePrevious}>
+              <button
+                style={{
+                  visibility: currentIndex > 0 ? "visible" : "hidden",
+                }}
+                className="photoButton"
+                onClick={handlePrevious}
+              >
                 &lt; previous
               </button>
-              <button className="photoButton" onClick={handleNext}>
+              <button
+                style={{
+                  visibility:
+                    currentIndex < experience.photos.length - 3
+                      ? "visible"
+                      : "hidden",
+                }}
+                className="photoButton"
+                onClick={handleNext}
+              >
                 next &gt;
               </button>
             </>

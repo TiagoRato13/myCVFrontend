@@ -106,12 +106,21 @@ function Interests() {
                   {interest.pictures.length > 0 && (
                     <>
                       <button
+                        style={{
+                          visibility: currentIndex > 0 ? "visible" : "hidden",
+                        }}
                         className="interestPhotoButton"
                         onClick={handlePrevious}
                       >
                         &lt; previous
                       </button>
+
                       <button
+                        style={{
+                          visibility: currentIndex < interest.pictures.length - 3
+                              ? "visible"
+                              : "hidden",
+                        }}
                         className="interestPhotoButton"
                         onClick={handleNext}
                       >
