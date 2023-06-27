@@ -117,7 +117,12 @@ function Interests() {
 
                       <button
                         style={{
-                          visibility: currentIndex < interest.pictures.length - 3
+                          visibility:
+                            visiblePhotos === 3
+                              ? currentIndex < interest.pictures.length - 3
+                                ? "visible"
+                                : "hidden"
+                              : currentIndex < interest.pictures.length - 1
                               ? "visible"
                               : "hidden",
                         }}

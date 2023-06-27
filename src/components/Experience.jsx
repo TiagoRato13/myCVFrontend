@@ -125,7 +125,11 @@ function Experience() {
               <button
                 style={{
                   visibility:
-                    currentIndex < experience.photos.length - 3
+                    visiblePhotos === 3
+                      ? currentIndex < experience.photos.length - 3
+                        ? "visible"
+                        : "hidden"
+                      : currentIndex < experience.photos.length - 1
                       ? "visible"
                       : "hidden",
                 }}
