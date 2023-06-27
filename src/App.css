@@ -502,7 +502,7 @@ body {
   font-size: 0.9rem;
   font-weight: 300;
   gap: 0.5vw;
-  margin: 2vh 0;
+  margin: 2vh 0 0;
   color: rgb(6, 75, 90);
 }
 
@@ -528,7 +528,7 @@ body {
   padding: 0.5vh 1vw;
   background-color: transparent;
   border: none;
-  margin: 3vh 2vw 0;
+  margin: 0 2vw 1vh;
   font-size: 1.3em;
   font-weight: 600;
   color: white;
