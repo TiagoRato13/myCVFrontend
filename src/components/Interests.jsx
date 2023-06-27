@@ -43,8 +43,10 @@ function Interests() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleToggleInterest = (id) => {
+      
       const newInterestId = id === interestId ? null : id;
       setInterestId(newInterestId);
+
       setTimeout(() => {
         const element = document.getElementById(newInterestId);
         if (element) {

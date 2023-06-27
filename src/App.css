@@ -445,13 +445,19 @@ body {
 
 /* --- EXPERIENCE --- */
 .experience-box {
-  margin: 10vh;
+  margin: 5vh 2vh;
+  cursor: pointer;
 }
 
 .experience-header {
   display: flex;
-  align-items: last baseline;
+  align-items: center;
   gap: 3vw;
+}
+
+.experience-arrow {
+  width: 20px;
+  rotate: 90deg;
 }
 
 .experience-company-img {
