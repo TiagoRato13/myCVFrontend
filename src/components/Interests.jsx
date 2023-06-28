@@ -29,7 +29,7 @@ function Interests() {
                 <div
                   className="interest-textBox"
                   style={{
-                    backgroundImage: `url(${interest.pictures[0]})`,
+                    backgroundImage: `url(${interest.picture})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
