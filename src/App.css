@@ -573,7 +573,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   z-index: 1;
   opacity: 0;
@@ -583,86 +583,15 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
+.interest-description p {
+  margin: 0 0 6px;
+}
+
 .interest-textBox:hover .interest-description {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
 }
 
-/* 
-.interest {
-  list-style: none;
-  margin: 2vh auto;
-  padding-top: 2vh;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition-duration: 1s;
-}
-
-.interest h3 {
-  font-size: 2em;
-  margin: 0;
-}
-
-.interest:hover {
-  color: rgb(6, 75, 90);
-}
-
-.interest-activeIcon {
-  width: 8vw;
-  height: 8vw;
-  margin: 0 50px 0 0;
-  background-color: transparent;
-}
-
-.interest-inactiveIcon {
-  width: 40px;
-  margin: 0 20px 0 0;
-  background-color: transparent;
-}
-
-.interest-photoButtons {
-  text-align: center;
-  margin: 2vh 0 1vh 0;
-}
-
-.interestPhotoButton {
-  padding: 0.5vh 1vw;
-  background-color: transparent;
-  border: none;
-  margin: 0 2vw 0;
-  font-size: 1.3em;
-  font-weight: 600;
-  color: white;
-  text-shadow: 0 0 3vh #0a778f;
-}
-
-.interestPhotoButton:hover {
-  color: #0a778f;
-  text-shadow: 0 0 3vh grey;
-}
-
-.interest-photos {
-  text-align: center;
-}
-
-.interest_adicionalInfo {
-  margin: auto 10vw;
-}
-
-.interest_pictures {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 10vh;
-  gap: 3vw;
-}
-
-.interest_pictures img {
-  width: 30%;
-  height: max-content;
-  box-shadow: 0 0 15px #064b5a;
-} */
 /* --- END INTERESTS --- */
 
 /* --- CONTACTS --- */
@@ -867,9 +796,7 @@ body {
   }
 
   /*  --- INTERESTS --- */
-  .interest_pictures img {
-    width: 50%;
-  }
+
   /*  --- END INTERESTS --- */
 }
 
@@ -1013,6 +940,23 @@ body {
     margin: 5vh 2vh;
   }
 
+  /*  --- INTERESTS --- */
+  .interest-box {
+    width: 450px;
+    height: 450px;
+  }
+
+  .interest-description {
+    width: 450.5px;
+    height: 450.5px;
+    font-size: 12px;
+  }
+
+  .interest-description p {
+    margin: 0 0 8px;
+  }
+  /*  --- END INTERESTS --- */
+
   .contact-links {
     max-width: 60vw;
     padding: 3vh;
@@ -1101,9 +1045,18 @@ body {
   }
 
   /*  --- INTERESTS --- */
-  .interest_pictures img {
-    width: 70%;
+  .interest-box {
+    width: 400px;
+    height: 400px;
   }
+
+  .interest-description {
+    width: 400.5px;
+    height: 400.5px;
+    font-weight: 300;
+    padding: 10px;
+  }
+
   /*  --- END INTERESTS --- */
 
   .scrollUp-button {
@@ -1150,6 +1103,25 @@ body {
     font-size: 2.5em;
   }
 
+  /*  --- INTERESTS --- */
+  .interest-box {
+    width: 350px;
+    height: 350px;
+  }
+
+  .interest-description {
+    width: 350.5px;
+    height: 350.5px;
+    font-size: 11px;
+    padding: 0;
+  }
+
+  .interest-description p {
+    margin: 0;
+  }
+
+  /*  --- END INTERESTS --- */
+
   .contact-links {
     max-width: 80vw;
   }
@@ -1168,8 +1140,8 @@ body {
 }
 
 @media only screen and (max-width: 401px) {
-  z.scrollUp-button {
-    bottom: 3.7vh;
+  .scrollUp-button {
+    bottom: 3vh;
     right: 4vw;
   }
 
