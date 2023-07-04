@@ -13,7 +13,7 @@
 }
 /* --- END GLOBAL CSS --- */
 
-/* MENU */
+/* --- MENU --- */
 
 body {
   background-color: #222327;
@@ -136,7 +136,6 @@ body {
 .component-enter-active {
   opacity: 1;
 }
-
 /* --- END MENU --- */
 
 /* --- CV --- */
@@ -210,6 +209,7 @@ body {
   font-weight: bold;
 }
 /* --- END TITLE --- */
+
 /* --- CONTENT --- */
 .content {
   color: white;
@@ -285,7 +285,6 @@ body {
   margin: 0;
   font-weight: 500;
 }
-
 /* --- END HOME --- */
 
 /* --- PROJECTS --- */
@@ -355,7 +354,6 @@ body {
   text-shadow: 0 0 10px #222327;
   transition-duration: 0s;
 }
-
 /* --- END PROJECTS --- */
 
 /* --- EDUCATION --- */
@@ -440,7 +438,6 @@ body {
 .add-line {
   border-bottom: 1px solid rgb(6, 75, 90);
 }
-
 /* --- END EDUCATION --- */
 
 /* --- EXPERIENCE --- */
@@ -539,11 +536,9 @@ body {
   color: #0a778f;
   text-shadow: 0 0 3vh grey;
 }
-
 /* --- END EXPERIENCE --- */
 
 /* --- INTERESTS --- */
-
 .interests {
   display: flex;
   flex-wrap: wrap;
@@ -598,11 +593,9 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
 }
-
 /* --- END INTERESTS --- */
 
 /* --- CONTACTS --- */
-
 .contact-links {
   border: 3px solid #0a778f;
   background-color: rgba(0, 0, 0, 0.8);
@@ -992,10 +985,7 @@ body {
 }
 
 @media only screen and (max-width: 551px) {
-  .content {
-    margin: 35vw 3vw 15vh;
-  }
-
+  /* --- MENU --- */
   .menu {
     left: 75vw;
   }
@@ -1019,6 +1009,30 @@ body {
     font-size: 0.9em;
   }
 
+  .menuName {
+    left: 40vw;
+    font-size: 2rem;
+  }
+  /* --- END MENU --- */
+
+  /* --- TITLE --- */
+  .title {
+    top: 11vh;
+    left: 10vw;
+  }
+
+  .title h1 {
+    font-size: 3em;
+  }
+  /* --- END TITLE --- */
+
+  /* --- CONTENT --- */
+  .content {
+    margin: 35vw 3vw 15vh;
+  }
+  /* --- END CONTENT --- */
+
+  /* --- HOME --- */
   .home-content {
     top: 20vh;
     left: 10vh;
@@ -1028,28 +1042,17 @@ body {
   .home-section h1 {
     font-size: 4em;
   }
+  /* --- END HOME --- */
 
-  .menuName {
-    left: 40vw;
-    font-size: 2rem;
-  }
-
-  .title {
-    top: 11vh;
-    left: 10vw;
-  }
-
-  .title h1 {
-    font-size: 3em;
+  /* --- EDUCATION --- */
+  .educationInfo-date {
+    font-size: 0.9em;
   }
 
   .education-schoolImage {
     width: 12vw;
   }
-
-  .educationInfo-date {
-    font-size: 0.9em;
-  }
+  /* --- END EDUCATION --- */
 
   /*  --- INTERESTS --- */
   .interest-box {
@@ -1066,6 +1069,7 @@ body {
 
   /*  --- END INTERESTS --- */
 
+  /* --- FOOTER --- */
   .scrollUp-button {
     bottom: 3.5vh;
   }
@@ -1073,13 +1077,11 @@ body {
   .scrollUp-button img {
     width: 9vw;
   }
+  /* --- END FOOTER --- */
 }
 
 @media only screen and (max-width: 451px) {
-  .content {
-    margin: 40vw 3vw 15vh;
-  }
-
+  /* --- MENU --- */
   .menu .toggle.active {
     box-shadow: 0 0 20px 90px #0a778f, inset 0 0 30px 5px black;
   }
@@ -1091,17 +1093,14 @@ body {
     font-size: 0.8em;
   }
 
-  .home-content {
-    left: 5vh;
-    width: 85vw;
-  }
-
   .menuName {
     top: 25vh;
     left: 15vw;
     width: 70vw;
   }
+  /* --- END MENU --- */
 
+  /* --- TITLE --- */
   .title {
     top: 9.5vh;
   }
@@ -1109,6 +1108,23 @@ body {
   .title h1 {
     font-size: 2.5em;
   }
+  /* --- END TITLE --- */
+
+  /* --- CONTENT --- */
+  .content {
+    margin: 40vw 3vw 15vh;
+  }
+  /* --- END CONTENT --- */
+
+  /* --- HOME --- */
+  .home-content {
+    left: 5vh;
+    width: 85vw;
+  }
+  .home-email p {
+    font-size: 13px;
+  }
+  /* --- END HOME --- */
 
   /*  --- INTERESTS --- */
   .interest-box {
@@ -1126,13 +1142,15 @@ body {
   .interest-description p {
     margin: 0 0 4px;
   }
-
   /*  --- END INTERESTS --- */
 
+  /* --- CONTACTS --- */
   .contact-links {
     max-width: 80vw;
   }
+  /* --- END CONTACTS --- */
 
+  /* --- FOOTER --- */
   .scrollUp-button {
     bottom: 4vh;
   }
@@ -1140,13 +1158,11 @@ body {
   .scrollUp-button img {
     width: 10vw;
   }
-
-  .home-email p {
-    font-size: 13px;
-  }
+  /* --- END FOOTER --- */
 }
 
 @media only screen and (max-width: 401px) {
+  /* --- FOOTER --- */
   .scrollUp-button {
     bottom: 3vh;
     right: 4vw;
@@ -1155,9 +1171,28 @@ body {
   .scrollUp-button img {
     width: 11vw;
   }
+  /* --- END FOOTER --- */
 }
 
 @media only screen and (max-width: 376px) {
+  /* --- MENU --- */
+  .menuName {
+    left: 5vw;
+    width: 90vw;
+  }
+  /* --- END MENU --- */
+
+  /* --- TITLE --- */
+  .title {
+    left: 5vw;
+  }
+
+  .title h1 {
+    font-size: 2.7em;
+  }
+  /* --- END TITLE --- */
+
+  /* --- HOME --- */
   .home-content {
     top: 15vh;
     left: 3vh;
@@ -1168,19 +1203,16 @@ body {
     font-size: 3.5em;
   }
 
-  .menuName {
-    left: 5vw;
-    width: 90vw;
+  .home-email img {
+    width: 7vw;
   }
 
-  .title {
-    left: 5vw;
+  .home-email p {
+    font-size: 12px;
   }
+  /* --- END HOME --- */
 
-  .title h1 {
-    font-size: 2.7em;
-  }
-
+  /* --- EDUCATION --- */
   .separator {
     width: 90vw;
     padding: 0 0 2vh 0;
@@ -1190,7 +1222,9 @@ body {
     min-width: 76vw;
     max-width: 88vw;
   }
+  /* --- END EDUCATION --- */
 
+  /* --- CONTACTS --- */
   .contact-links {
     max-width: 80vw;
   }
@@ -1198,13 +1232,11 @@ body {
   .contacts-links-social img {
     width: 5vh;
   }
+  /* --- END CONTACTS --- */
 
-  .home-email img {
-    width: 7vw;
-  }
-
-  .home-email p {
-    font-size: 12px;
+  /* --- FOOTER --- */
+  .footer {
+    gap: 0vw;
   }
 
   .scrollUp-button {
@@ -1214,25 +1246,26 @@ body {
   .scrollUp-button img {
     width: 12vw;
   }
-
-  .footer {
-    gap: 0vw;
-  }
+  /* --- END FOOTER --- */
 }
 
 @media only screen and (max-width: 361px) {
-  .content {
-    margin: 53vw 3vw 15vh;
+  /* --- MENU --- */
+  .menu {
+    left: 72vw;
   }
 
-  .home-content {
-    top: 22vh;
-    left: 2vh;
-    width: 93vw;
+  .toggle {
+    min-width: 70px;
+    min-height: 70px;
   }
 
   .menu .toggle.active {
     box-shadow: 0 0 20px 80px #0a778f, inset 0 0 30px 5px black;
+  }
+
+  .toggle a {
+    font-size: 8px;
   }
 
   .menu li {
@@ -1241,26 +1274,9 @@ body {
     transform-origin: center;
     font-size: 0.7em;
   }
-  .toggle {
-    min-width: 70px;
-    min-height: 70px;
-  }
+  /* --- END MENU --- */
 
-  .toggle a {
-    font-size: 8px;
-  }
-
-  .menu {
-    left: 72vw;
-  }
-  .home-section h1 {
-    font-size: 4em;
-  }
-
-  .home-section p {
-    font-size: 14px;
-  }
-
+  /* --- TITLE --- */
   .title {
     top: 11vh;
   }
@@ -1268,27 +1284,27 @@ body {
   .title h1 {
     font-size: 2.4em;
   }
+  /* --- END TITLE --- */
 
-  .project-box {
-    margin: 3vh 0vw;
+  /* --- CONTENT --- */
+  .content {
+    margin: 53vw 3vw 15vh;
+  }
+  /* --- END CONTENT --- */
+
+  /* --- HOME --- */
+  .home-content {
+    top: 22vh;
+    left: 2vh;
+    width: 93vw;
   }
 
-  .separator {
-    width: 90vw;
-    padding: 0 0 2vh 0;
+  .home-section h1 {
+    font-size: 4em;
   }
 
-  .project-image {
-    min-width: 76vw;
-    max-width: 88vw;
-  }
-
-  .contact-links {
-    max-width: 80vw;
-  }
-
-  .contacts-links-social img {
-    width: 5vh;
+  .home-section p {
+    font-size: 14px;
   }
 
   .home-email img {
@@ -1298,6 +1314,41 @@ body {
   .home-email p {
     font-size: 12px;
   }
+  /* --- END HOME --- */
+
+  /* --- PROJECTS --- */
+  .project-box {
+    margin: 3vh 0vw;
+  }
+
+  /* --- END PROJECTS --- */
+
+  /* --- EDUCATION --- */
+  .separator {
+    width: 90vw;
+    padding: 0 0 2vh 0;
+  }
+
+  .project-image {
+    min-width: 76vw;
+    max-width: 88vw;
+  }
+  /* --- END EDUCATION --- */
+
+  /* --- CONTACTS --- */
+  .contact-links {
+    max-width: 80vw;
+  }
+
+  .contacts-links-social img {
+    width: 5vh;
+  }
+  /* --- END CONTACTS --- */
+
+  /* --- FOOTER --- */
+  .footer {
+    gap: 0vw;
+  }
 
   .scrollUp-button {
     bottom: 3.2vh;
@@ -1306,13 +1357,11 @@ body {
   .scrollUp-button img {
     width: 13vw;
   }
-
-  .footer {
-    gap: 0vw;
-  }
+  /* --- END FOOTER --- */
 }
 
 @media only screen and (max-width: 321px) {
+  /* --- TITLE --- */
   .title {
     top: 11vh;
   }
@@ -1320,9 +1369,11 @@ body {
   .title h1 {
     font-size: 2.1em;
   }
+  /* --- END TITLE --- */
 }
 
 @media only screen and (max-width: 281px) {
+  /* --- TITLE --- */
   .title {
     top: 15vh;
   }
@@ -1330,5 +1381,6 @@ body {
   .title h1 {
     font-size: 1.8em;
   }
+  /* --- END TITLE --- */
 }
 /* END CSS */
