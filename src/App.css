@@ -1117,7 +1117,7 @@ body {
   }
 
   .interest-description p {
-    margin: 0;
+    margin: 0 0 4px;
   }
 
   /*  --- END INTERESTS --- */
