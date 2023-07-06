@@ -51,7 +51,7 @@ function Education() {
               >
                 {bootcamp.project.map((project, projectId) => {
                   return (
-                    <div className="education-school">
+                    <div className="education-school" key={projectId}>
                       <div
                         className={`${
                           bootcamp.project.length > 1 ? "separator" : ""

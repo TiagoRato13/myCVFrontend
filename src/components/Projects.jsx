@@ -26,7 +26,7 @@ function Projects() {
       {projects.length &&
         projects.map((project, projectId) => {
           return (
-            <div className="project-box">
+            <div className="project-box" key={projectId}>
               <img src={project.image} alt={project.name} />
               <h3>{project.name}</h3>
               <h6 className="tech-used">Technologies used:</h6>
@@ -36,7 +36,10 @@ function Projects() {
                   return (
                     <>
                       {techId !== 0 ? ", " : ""}{" "}
-                      <span className={techId % 2 === 0 ? "even" : "odd"}>
+                      <span
+                        key={techId}
+                        className={techId % 2 === 0 ? "even" : "odd"}
+                      >
                         {tech}
                       </span>
                     </>

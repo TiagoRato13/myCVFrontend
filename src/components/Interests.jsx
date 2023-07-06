@@ -21,9 +21,9 @@ function Interests() {
   return (
     <section className="interests">
       {interests.length &&
-        interests.map((interest) => {
+        interests.map((interest, interestId) => {
           return (
-            <div className="indInterest">
+            <div className="indInterest" key={interestId}>
               <h2>{interest.name}</h2>
               <div className="interest-box">
                 <div
@@ -39,8 +39,8 @@ function Interests() {
                 >
                   <div className="interest-description">
                     {interest.aditionalInfo &&
-                      interest.aditionalInfo.map((info) => {
-                        return <p>{info}</p>;
+                      interest.aditionalInfo.map((info, infoId) => {
+                        return <p key={infoId}>{info}</p>;
                       })}
                   </div>
                 </div>
