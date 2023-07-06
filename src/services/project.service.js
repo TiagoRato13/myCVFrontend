@@ -3,10 +3,7 @@ import axios from "axios";
 class ProjectService {
   constructor() {
     this.api = axios.create({
-      baseURL:
-        import.meta.env.VITE_API_URL ||
-        "http://localhost:5005" ||
-        "https://tiagorato.vercel.app/",
+      baseURL: import.meta.env.VITE_API_URL || "http://localhost:5005",
       /* withCredentials: true  */
     });
 
