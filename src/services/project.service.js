@@ -3,7 +3,7 @@ import axios from "axios";
 class ProjectService {
   constructor() {
     this.api = axios.create({
-      baseURL: import.meta.env.VITE_API_URL || "https://tiagoratocv.cyclic.app",
+      baseURL: import.meta.env.VITE_API_URL,
       /* withCredentials: true  */
     });
 
