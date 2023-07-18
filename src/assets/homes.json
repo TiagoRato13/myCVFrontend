@@ -1,0 +1,49 @@
+{
+  "_id": {
+    "$oid": "64a6c6130e3976df2b2c2bb2"
+  },
+  "info": [
+    "I've spent the last 2 years developing my tech skills by joining both Codemaster and Ironhack Bootcamps. My friends call me Rato (that's mouse in English, my surname), and I love to paint 🎨. Most recently, I found the world of board games. I also have 2 dogs that I adopted in Thailand, whom I love beyond words.",
+    "This is my last project, have a look around and... let's connect!"
+  ],
+  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1683728219/myCV/temporary_image_dl1cem.jpg",
+  "github": {
+    "name": "Github",
+    "image": {
+      "active": "https://res.cloudinary.com/datglss57/image/upload/v1685032123/myCV/About%20-%20Home/github2_zrihjd.png",
+      "inactive": "https://res.cloudinary.com/datglss57/image/upload/v1685032123/myCV/About%20-%20Home/github_q5yjl1.png"
+    },
+    "link": "https://github.com/TiagoRato13"
+  },
+  "linkedin": {
+    "name": "linkedin",
+    "image": {
+      "active": "https://res.cloudinary.com/datglss57/image/upload/v1685032122/myCV/About%20-%20Home/linkedin2_p8h5vb.png",
+      "inactive": "https://res.cloudinary.com/datglss57/image/upload/v1685032122/myCV/About%20-%20Home/linkedin_nshc0z.png"
+    },
+    "link": "https://www.linkedin.com/in/tiagorato/"
+  },
+  "phone": {
+    "name": "phone",
+    "image": {
+      "active": "https://res.cloudinary.com/datglss57/image/upload/v1685032122/myCV/About%20-%20Home/phone2_xqtux1.png",
+      "inactive": "https://res.cloudinary.com/datglss57/image/upload/v1685032122/myCV/About%20-%20Home/phone_qnueqk.png"
+    },
+    "number": "+351 966 695 370"
+  },
+  "email": {
+    "name": "email",
+    "image": {
+      "active": "https://res.cloudinary.com/datglss57/image/upload/v1685032122/myCV/About%20-%20Home/email2_qmyve4.png",
+      "inactive": "https://res.cloudinary.com/datglss57/image/upload/v1685032122/myCV/About%20-%20Home/email_tgg0np.png"
+    },
+    "address": "tiagorato13@hotmail.com"
+  },
+  "createdAt": {
+    "$date": "2023-07-06T13:48:03.399Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-06T13:48:03.399Z"
+  },
+  "__v": 0
+}

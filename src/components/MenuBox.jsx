@@ -42,7 +42,7 @@ function MenuBox({
           }}
         >
           <NavLink
-            to="/"
+            to="#"
             onMouseOver={() =>
               handleMouseOver("What do you want to know about?")
             }

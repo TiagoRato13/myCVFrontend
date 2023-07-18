@@ -195,19 +195,10 @@ body {
   position: absolute;
   left: 15vw;
   top: 9vh;
-}
-
-.titleHome {
-  color: rgb(6, 75, 90);
-  position: absolute;
-  left: 5vw;
-  top: 12vh;
-}
-
-.title h1 {
   font-size: 4.5em;
   font-weight: bold;
 }
+
 /* --- END TITLE --- */
 
 /* --- CONTENT --- */
@@ -646,9 +637,11 @@ body {
 .footer {
   position: fixed;
   display: flex;
+  z-index: 1;
   gap: 10vw;
   align-items: center;
   bottom: 0;
+  left: 0;
   width: 100vw;
   height: 8vh;
   background-color: #064b5a;
@@ -752,7 +745,7 @@ body {
     bottom: 3vh;
   }
 
-  .title h1 {
+  .title {
     font-size: 4em;
   }
 
@@ -814,7 +807,7 @@ body {
     width: 60vw;
   }
 
-  .title h1 {
+  .title {
     font-size: 3.5em;
   }
 
@@ -1019,9 +1012,6 @@ body {
   .title {
     top: 11vh;
     left: 10vw;
-  }
-
-  .title h1 {
     font-size: 3em;
   }
   /* --- END TITLE --- */
@@ -1103,9 +1093,6 @@ body {
   /* --- TITLE --- */
   .title {
     top: 9.5vh;
-  }
-
-  .title h1 {
     font-size: 2.5em;
   }
   /* --- END TITLE --- */
@@ -1185,9 +1172,6 @@ body {
   /* --- TITLE --- */
   .title {
     left: 5vw;
-  }
-
-  .title h1 {
     font-size: 2.7em;
   }
   /* --- END TITLE --- */
@@ -1279,9 +1263,6 @@ body {
   /* --- TITLE --- */
   .title {
     top: 11vh;
-  }
-
-  .title h1 {
     font-size: 2.4em;
   }
   /* --- END TITLE --- */
@@ -1364,9 +1345,6 @@ body {
   /* --- TITLE --- */
   .title {
     top: 11vh;
-  }
-
-  .title h1 {
     font-size: 2.1em;
   }
   /* --- END TITLE --- */
@@ -1376,9 +1354,6 @@ body {
   /* --- TITLE --- */
   .title {
     top: 15vh;
-  }
-
-  .title h1 {
     font-size: 1.8em;
   }
   /* --- END TITLE --- */

@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 /* COMPONENTS */
 import projectService from "../services/project.service";
+import Title from "./Title";
 
 function Projects() {
   const [projects, setProjects] = useState([]);

@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "64a6cbcc0e3976df2b2c2bf3"
+  },
+  "schoolName": "Ironhack",
+  "schoolImage": "https://res.cloudinary.com/datglss57/image/upload/v1684326806/myCV/Education/ironhackLogo_taso9s.png",
+  "startDate": "January 2023",
+  "endDate": "March 2023",
+  "project": [
+    {
+      "name": "Maria Psychologist",
+      "link": "https://marialuisasilvapsicologia.com/",
+      "image": "https://res.cloudinary.com/datglss57/image/upload/v1684412634/myCV/Projects/Screenshot_2023-05-18_132259_jjh4qk.png",
+      "technology": [
+        "React",
+        "NodeJs",
+        "ExpressJs",
+        "MongoDB",
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Postman",
+        "Bootstrap",
+        "Git",
+        "GitHub"
+      ],
+      "_id": {
+        "$oid": "64a6cbcc0e3976df2b2c2bf4"
+      }
+    },
+    {
+      "name": "Precoce",
+      "link": "https://precoce.cyclic.app/",
+      "image": "https://res.cloudinary.com/datglss57/image/upload/v1686653573/myCV/Projects/Screenshot_2023-06-13_115213_yzdtgi.png",
+      "technology": [
+        "HandleBars",
+        "NodeJs",
+        "ExpressJs",
+        "MongoDB",
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Git",
+        "GitHub"
+      ],
+      "_id": {
+        "$oid": "64a6cbcc0e3976df2b2c2bf5"
+      }
+    },
+    {
+      "name": "The Boss at the end of the tunnel",
+      "link": "https://tiagorato13.github.io/TheBossAtTheEndOfTheTunnel/",
+      "image": "https://res.cloudinary.com/datglss57/image/upload/v1684402675/myCV/Projects/Screenshot_2023-05-18_103517_rvhscu.png",
+      "technology": [
+        "Javascript",
+        "HTML",
+        "CSS"
+      ],
+      "_id": {
+        "$oid": "64a6cbcc0e3976df2b2c2bf6"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-07-06T14:12:28.953Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-06T14:12:28.953Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a6cbe90e3976df2b2c2bf8"
+  },
+  "schoolName": "Codemaster",
+  "schoolImage": "https://res.cloudinary.com/datglss57/image/upload/v1684326843/myCV/Education/codemaster_exyoke.jpg",
+  "startDate": "December 2021",
+  "endDate": "June 2023",
+  "project": [
+    {
+      "name": "Sebastião Alves",
+      "link": "https://github.com/TiagoRato13/sebastiao_alves",
+      "image": "https://res.cloudinary.com/datglss57/image/upload/v1686657230/myCV/Projects/Screenshot_2023-06-13_114912_fcxizv.png",
+      "technology": [
+        "MySQL",
+        "PHP",
+        "Javascript",
+        "HTML",
+        "CSS"
+      ],
+      "_id": {
+        "$oid": "64a6cbe90e3976df2b2c2bf9"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-07-06T14:12:57.032Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-06T14:12:57.032Z"
+  },
+  "__v": 0
+}]

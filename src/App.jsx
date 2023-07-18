@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import MenuBox from "./components/MenuBox";
@@ -11,6 +12,7 @@ import Interests from "./components/Interests";
 import Title from "./components/Title";
 import Footer from "./components/Footer";
 
+import data from "./assets/homes.json";
 import projectService from "./services/project.service";
 
 function App() {
@@ -18,8 +20,8 @@ function App() {
   const [activeContent, setActiveContent] = useState("home");
   const [showContent, setShowContent] = useState(true);
   const [contacts, setContacts] = useState([]);
-
-  const getContacts = async () => {
+  const [jsonData, setJsonData] = useState(data);
+  /* const getContacts = async () => {
     try {
       const response = await projectService.getContacts();
       console.log(response.data);
@@ -27,10 +29,11 @@ function App() {
     } catch (error) {
       console.log(error);
     }
-  };
+  }; */
 
   useEffect(() => {
-    getContacts();
+    /* getContacts(); */
+    console.log(jsonData);
   }, []);
 
   return (
@@ -44,38 +47,91 @@ function App() {
         setActiveContent={setActiveContent}
       />
 
-      <div className={` ${activeContent !== "home" ? "title" : "titleHome"}`}>
-        {showContent && activeContent !== "home" && (
-          <Title activeContent={activeContent} />
-        )}
-        {showContent && activeContent === "home" && <Title activeContent=" " />}
-      </div>
-      {showContent && activeContent === "home" && (
-        <div className="home-content">
-          <Home activeContent={activeContent} contacts={contacts} />
-        </div>
+      {showContent && (
+        <>
+          <div className="home-content">
+            <Routes>
+              <Route
+                path="/"
+                element={<Home activeContent="home" contacts={jsonData} />}
+              />
+            </Routes>
+          </div>
+          <div className="content">
+            <Routes>
+              <Route
+                path="/projects"
+                element={
+                  <>
+                    <Title activeContent={activeContent} />
+                    <Projects />
+                  </>
+                }
+              />
+              <Route
+                path="/contacts"
+                element={
+                  <>
+                    <Title activeContent={activeContent} />
+                    <Contacts contacts={contacts} />
+                  </>
+                }
+              />
+              <Route
+                path="/education"
+                element={
+                  <>
+                    <Title activeContent={activeContent} />
+                    <Education />
+                    <Footer
+                      activeContent={activeContent}
+                      menu={menu}
+                      setMenu={setMenu}
+                      showContent={showContent}
+                      setShowContent={setShowContent}
+                      setActiveContent={setActiveContent}
+                    />
+                  </>
+                }
+              />
+              <Route
+                path="/experience"
+                element={
+                  <>
+                    <Title activeContent={activeContent} />
+                    <Experience />
+                    <Footer
+                      activeContent={activeContent}
+                      menu={menu}
+                      setMenu={setMenu}
+                      showContent={showContent}
+                      setShowContent={setShowContent}
+                      setActiveContent={setActiveContent}
+                    />
+                  </>
+                }
+              />
+              <Route
+                path="/interests"
+                element={
+                  <>
+                    <Title activeContent={activeContent} />
+                    <Interests />
+                    <Footer
+                      activeContent={activeContent}
+                      menu={menu}
+                      setMenu={setMenu}
+                      showContent={showContent}
+                      setShowContent={setShowContent}
+                      setActiveContent={setActiveContent}
+                    />
+                  </>
+                }
+              />
+            </Routes>
+          </div>
+        </>
       )}
-      <div className="content">
-        {showContent && activeContent === "projects" && <Projects />}
-        {showContent && activeContent === "contacts" && (
-          <Contacts contacts={contacts} />
-        )}
-        {showContent && activeContent === "education" && <Education />}
-        {showContent && activeContent === "experience" && <Experience />}
-        {showContent && activeContent === "interests" && <Interests />}
-      </div>
-      <div>
-        {showContent && activeContent !== "home" && (
-          <Footer
-            activeContent={activeContent}
-            menu={menu}
-            setMenu={setMenu}
-            showContent={showContent}
-            setShowContent={setShowContent}
-            setActiveContent={setActiveContent}
-          />
-        )}
-      </div>
     </div>
   );
 }
