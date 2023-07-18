@@ -7,7 +7,7 @@ import EmailButton from "./EmailButton";
 
 function Home({ activeContent, contacts }) {
   useEffect(() => {
-    console.log(contacts);
+    /* console.log(contacts); */
   }, []);
 
   return (

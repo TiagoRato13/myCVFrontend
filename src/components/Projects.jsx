@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 /* COMPONENTS */
+import projects from "../assets/projects.json";
 import projectService from "../services/project.service";
 import Title from "./Title";
 
 function Projects() {
-  const [projects, setProjects] = useState([]);
-
-  const getProject = async () => {
+  /* const [projects, setProjects] = useState([]); */
+  const [jsonProjects, setJsonProjects] = useState(projects);
+  /* const getProject = async () => {
     try {
       const response = await projectService.getProject();
       console.log(response.data);
@@ -16,16 +17,16 @@ function Projects() {
     } catch (error) {
       console.log(error);
     }
-  };
+  }; */
 
   useEffect(() => {
-    getProject();
+    /* getProject(); */
   }, []);
 
   return (
     <section className="projects">
-      {projects.length &&
-        projects.map((project, projectId) => {
+      {jsonProjects.length &&
+        jsonProjects.map((project, projectId) => {
           return (
             <div className="project-box" key={projectId}>
               <img src={project.image} alt={project.name} />

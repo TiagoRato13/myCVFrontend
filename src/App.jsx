@@ -12,15 +12,15 @@ import Interests from "./components/Interests";
 import Title from "./components/Title";
 import Footer from "./components/Footer";
 
-import data from "./assets/homes.json";
+import contacts from "./assets/homes.json";
 import projectService from "./services/project.service";
 
 function App() {
   const [menu, setMenu] = useState(false);
   const [activeContent, setActiveContent] = useState("home");
   const [showContent, setShowContent] = useState(true);
-  const [contacts, setContacts] = useState([]);
-  const [jsonData, setJsonData] = useState(data);
+  /* const [contacts, setContacts] = useState([]); */
+  const [jsonContacts, setJsonContacts] = useState(contacts);
   /* const getContacts = async () => {
     try {
       const response = await projectService.getContacts();
@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     /* getContacts(); */
-    console.log(jsonData);
+    /* console.log(jsonContacts); */
   }, []);
 
   return (
@@ -53,7 +53,7 @@ function App() {
             <Routes>
               <Route
                 path="/"
-                element={<Home activeContent="home" contacts={jsonData} />}
+                element={<Home activeContent="home" contacts={jsonContacts} />}
               />
             </Routes>
           </div>
@@ -73,7 +73,7 @@ function App() {
                 element={
                   <>
                     <Title activeContent={activeContent} />
-                    <Contacts contacts={contacts} />
+                    <Contacts contacts={jsonContacts} />
                   </>
                 }
               />

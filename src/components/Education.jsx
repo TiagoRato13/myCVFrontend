@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-
-import projectService from "../services/project.service";
 import { NavLink } from "react-router-dom";
 
-function Education() {
-  const [education, setEducation] = useState([]);
+import education from "../assets/educations.json";
+import projectService from "../services/project.service";
 
-  const getEducation = async () => {
+function Education() {
+  /* const [education, setEducation] = useState([]); */
+  const [jsonEducation, setJsonEducation] = useState(education);
+  /* const getEducation = async () => {
     try {
       const response = await projectService.getEducation();
       console.log(response.data);
@@ -14,16 +15,16 @@ function Education() {
     } catch (error) {
       console.log(error);
     }
-  };
+  }; */
 
   useEffect(() => {
-    getEducation();
+    /* getEducation(); */
   }, []);
 
   return (
     <>
-      {education.length &&
-        education.map((bootcamp, id) => {
+      {jsonEducation.length &&
+        jsonEducation.map((bootcamp, id) => {
           return (
             <div className="educationInfo" key={id}>
               <div className="educationInfo-school">
@@ -46,7 +47,7 @@ function Education() {
 
               <div
                 className={`education-projects ${
-                  id < education.length - 1 ? "add-line" : ""
+                  id < jsonEducation.length - 1 ? "add-line" : ""
                 }`}
               >
                 {bootcamp.project.map((project, projectId) => {

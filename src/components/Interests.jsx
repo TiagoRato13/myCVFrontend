@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+
+import interests from "../assets/interests.json";
 import projectService from "../services/project.service";
 
 function Interests() {
-  const [interests, setInterests] = useState([]);
-
-  const getInterests = async () => {
+  /* const [interests, setInterests] = useState([]); */
+  const [jsonInterests, setJsonInterests] = useState(interests);
+  /*  const getInterests = async () => {
     try {
       const response = await projectService.getInterests();
       console.log(response.data);
@@ -12,16 +14,16 @@ function Interests() {
     } catch (error) {
       console.log(error);
     }
-  };
+  }; */
 
   useEffect(() => {
-    getInterests();
+    /* getInterests(); */
   }, []);
 
   return (
     <section className="interests">
-      {interests.length &&
-        interests.map((interest, interestId) => {
+      {jsonInterests.length &&
+        jsonInterests.map((interest, interestId) => {
           return (
             <div className="indInterest" key={interestId}>
               <h2>{interest.name}</h2>

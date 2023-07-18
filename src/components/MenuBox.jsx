@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Routes, Route } from "react-router-dom";
 
 function MenuBox({
   menu,
@@ -19,7 +19,7 @@ function MenuBox({
 
   const handleToggleMenu = () => {
     setShowContent(!showContent);
-    setActiveContent("home");
+    /* setActiveContent("home"); */
     setTimeout(() => {
       setToggleMenu(!toggleMenu);
     }, 0);
@@ -39,17 +39,11 @@ function MenuBox({
           className={`toggle ${toggleMenu ? "active" : ""}`}
           onClick={() => {
             handleToggleMenu();
+            setTitle("What do you want to know about?");
           }}
+          onMouseOver={() => handleMouseOver("What do you want to know about?")}
         >
-          <NavLink
-            to="#"
-            onMouseOver={() =>
-              handleMouseOver("What do you want to know about?")
-            }
-            onClick={() => setTitle("What do you want to know about?")}
-          >
-            {menu === false ? "ABOUT ME" : "Home"}
-          </NavLink>
+          <NavLink to="/">{menu === false ? "ABOUT ME" : "Home"}</NavLink>
         </div>
         {toggleMenu && (
           <>

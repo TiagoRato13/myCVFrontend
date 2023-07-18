@@ -1,25 +1,26 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import arrow from "../assets/images/up-arrow.png";
+import experience from "../assets/experiences.json";
 import projectService from "../services/project.service";
 
 function Experience() {
   const photos = window.innerWidth <= 980 ? 1 : 3;
   const [selectedExperience, setSelectedExperience] = useState(null);
-  const [experience, setExperience] = useState([]);
+  /* const [experience, setExperience] = useState([]); */
   const [visiblePhotos, setVisiblePhotos] = useState(photos);
   const selectedExperienceRef = useRef(null);
-
-  const getExperience = async () => {
+  const [jsonExperience, setJsonExperience] = useState(experience);
+  /* const getExperience = async () => {
     try {
       const response = await projectService.getExperience();
       console.log(response.data);
       setExperience(response.data.reverse());
     } catch (error) {}
-  };
+  }; */
 
   useEffect(() => {
-    getExperience();
+    /* getExperience(); */
 
     const handleResize = () => {
       // Update visiblePhotos based on screen size
@@ -175,7 +176,7 @@ function Experience() {
 
   return (
     <>
-      {experience.map((exp, id) => (
+      {jsonExperience.map((exp, id) => (
         <ExperienceItem key={id} experience={exp} />
       ))}
     </>
