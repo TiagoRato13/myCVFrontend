@@ -1,285 +1,284 @@
-[{
-  "_id": {
-    "$oid": "64a6cb270e3976df2b2c2be1"
+[
+  {
+    "_id": {
+      "$oid": "64a6cb270e3976df2b2c2be1"
+    },
+    "company": "St Pancras Renaissance Hotel",
+    "location": "London, England",
+    "position": "Demi Chef",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684768842/myCV/Experience/St%20Pancras/stPancras_dvq4wn.png",
+    "startDate": "February 2011",
+    "endDate": "November 2012",
+    "photos": [
+      "https://res.cloudinary.com/datglss57/image/upload/v1684768993/myCV/Experience/St%20Pancras/stPancrasHotel_euj79i.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasEntranceNight_kihbcz.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasStairs_krypjd.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasEntranceBar_jlxlf5.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasBar_emlxrn.webp",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasPool_zej68m.webp",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasCorridor_nbyhkv.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684768990/myCV/Experience/St%20Pancras/stPancrasHotel2_jwsclt.jpg"
+    ],
+    "tasks": [
+      "Manage kitchen and produce high quality service for 'Chambers' private club.",
+      "Deliver high quality service, having in mind food hygiene and safety procedures.",
+      "Minimize risks focusing on HACCP.",
+      "Create balanced and healthy meals using in season products.",
+      "Adapt menu to fit multiple costumers allergies."
+    ],
+    "skills": [
+      "Team management",
+      "Forecast and planning",
+      "Research",
+      "Seasonal adaptability",
+      "Budgeting",
+      "Multitasking",
+      "Costumer service"
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:09:43.930Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:09:43.930Z"
+    },
+    "__v": 0
   },
-  "company": "St Pancras Renaissance Hotel",
-  "location": "London, England",
-  "position": "Demi Chef",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684768842/myCV/Experience/St%20Pancras/stPancras_dvq4wn.png",
-  "startDate": "February 2011",
-  "endDate": "November 2012",
-  "photos": [
-    "https://res.cloudinary.com/datglss57/image/upload/v1684768993/myCV/Experience/St%20Pancras/stPancrasHotel_euj79i.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasEntranceNight_kihbcz.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasStairs_krypjd.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasEntranceBar_jlxlf5.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasBar_emlxrn.webp",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasPool_zej68m.webp",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684768843/myCV/Experience/St%20Pancras/stPancrasCorridor_nbyhkv.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684768990/myCV/Experience/St%20Pancras/stPancrasHotel2_jwsclt.jpg"
-  ],
-  "tasks": [
-    "Manage kitchen and produce high quality service for 'Chambers' private club.",
-    "Deliver high quality service, having in mind food hygiene and safety procedures.",
-    "Minimize risks focusing on HACCP.",
-    "Create balanced and healthy meals using in season products.",
-    "Adapt menu to fit multiple costumers allergies."
-  ],
-  "skills": [
-    "Team management",
-    "Forecast and planning",
-    "Research",
-    "Seasonal adaptability",
-    "Budgeting",
-    "Multitasking",
-    "Costumer service"
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:09:43.930Z"
+  {
+    "_id": {
+      "$oid": "64a6cb440e3976df2b2c2be3"
+    },
+    "company": "28-50",
+    "location": "London, England",
+    "position": "Commis Chef",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684929865/myCV/Experience/28-50/28-50_2_zwosmr.png",
+    "startDate": "November 2012",
+    "endDate": "August 2013",
+    "photos": [
+      "https://res.cloudinary.com/datglss57/image/upload/v1684856198/myCV/Experience/28-50/2850street_dtmkad.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684856198/myCV/Experience/28-50/2850restaurant2_vdshko.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684856198/myCV/Experience/28-50/2850restaurant_auxw0s.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684925261/myCV/Experience/28-50/2850restaurantOutside_mfilg7.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684856197/myCV/Experience/28-50/2850bottomrestaurant_swbutt.jpg"
+    ],
+    "tasks": [
+      "Deliver high quality service, having in mind food hygiene and safety procedures.",
+      "Minimize risks focusing on HACCP.",
+      "Create balanced and healthy meals using in season products."
+    ],
+    "skills": [
+      "Forecast and planning",
+      "Research",
+      "Seasonal adaptability",
+      "Multitasking",
+      "Costumer service"
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:10:12.684Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:10:12.684Z"
+    },
+    "__v": 0
   },
-  "updatedAt": {
-    "$date": "2023-07-06T14:09:43.930Z"
+  {
+    "_id": {
+      "$oid": "64a6cb500e3976df2b2c2be5"
+    },
+    "company": "The London Edition Hotel",
+    "location": "London, England",
+    "position": "Demi Chef",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684930508/myCV/Experience/Edition%20London/Edition_p49krl.png",
+    "startDate": "August 2013",
+    "endDate": "November 2013",
+    "photos": [
+      "https://res.cloudinary.com/datglss57/image/upload/v1684857186/myCV/Experience/Edition%20London/EditionHotelEntrance2_eofcse.png",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684857185/myCV/Experience/Edition%20London/editionHotelBernersTavern_p7f7hw.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684857185/myCV/Experience/Edition%20London/editionHotelBernersTavern2_rjeska.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684857185/myCV/Experience/Edition%20London/editionHotelSmoking_bcccmh.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684857185/myCV/Experience/Edition%20London/editionhotelentrance_q0diwj.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684857186/myCV/Experience/Edition%20London/editionhotelTerrace_fcrbs9.jpg"
+    ],
+    "tasks": [
+      "Deliver high quality service, having in mind food hygiene and safety procedures.",
+      "Minimize risks focusing on HACCP.",
+      "Create balanced and healthy meals using in season products."
+    ],
+    "skills": [
+      "Forecast and planning",
+      "Research",
+      "Seasonal adaptability",
+      "Multitasking",
+      "Costumer service"
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:10:24.061Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:10:24.061Z"
+    },
+    "__v": 0
   },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6cb440e3976df2b2c2be3"
+  {
+    "_id": {
+      "$oid": "64a6cb5d0e3976df2b2c2be7"
+    },
+    "company": "One Aldwych",
+    "location": "London, England",
+    "position": "Chef de Partie",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684940829/myCV/Experience/One%20Aldwych/oneAldwych_i6gg4f.webp",
+    "startDate": "October 2013",
+    "endDate": "June 2017",
+    "photos": [
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychHotel2_woc9u4.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychLobby_yjtl59.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychIndigo_rajypw.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychAT2_yzu3vo.webp",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychAT_grxfn7.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychHotel_bx4q50.webp"
+    ],
+    "tasks": [
+      "Deliver high quality service, having in mind food hygiene and safety procedures.",
+      "Minimize risks focusing on HACCP.",
+      "Create balanced and healthy meals using in season products.",
+      "Cater for both restaurant and Hotel events simultaneously."
+    ],
+    "skills": [
+      "Team management",
+      "Problem Solving",
+      "Leadership",
+      "Team Building",
+      "Forecast and planning",
+      "Menu Design",
+      "Research",
+      "Seasonal adaptability",
+      "Budgeting",
+      "Multitasking",
+      "Costumer service",
+      "Ordering",
+      "First Aid"
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:10:37.980Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:10:37.980Z"
+    },
+    "__v": 0
   },
-  "company": "28-50",
-  "location": "London, England",
-  "position": "Commis Chef",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684929865/myCV/Experience/28-50/28-50_2_zwosmr.png",
-  "startDate": "November 2012",
-  "endDate": "August 2013",
-  "photos": [
-    "https://res.cloudinary.com/datglss57/image/upload/v1684856198/myCV/Experience/28-50/2850street_dtmkad.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684856198/myCV/Experience/28-50/2850restaurant2_vdshko.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684856198/myCV/Experience/28-50/2850restaurant_auxw0s.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684925261/myCV/Experience/28-50/2850restaurantOutside_mfilg7.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684856197/myCV/Experience/28-50/2850bottomrestaurant_swbutt.jpg"
-  ],
-  "tasks": [
-    "Deliver high quality service, having in mind food hygiene and safety procedures.",
-    "Minimize risks focusing on HACCP.",
-    "Create balanced and healthy meals using in season products."
-  ],
-  "skills": [
-    "Forecast and planning",
-    "Research",
-    "Seasonal adaptability",
-    "Multitasking",
-    "Costumer service"
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:10:12.684Z"
+  {
+    "_id": {
+      "$oid": "64a6cb6a0e3976df2b2c2be9"
+    },
+    "company": "The Magazine",
+    "location": "London, England",
+    "position": "Chef de Partie",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684941144/myCV/Experience/The%20Magazine/TheMagazine_g3hblb.png",
+    "startDate": "May 2016",
+    "endDate": "June 2017",
+    "photos": [
+      "https://res.cloudinary.com/datglss57/image/upload/v1684927239/myCV/Experience/The%20Magazine/themagazine2_oroltj.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858896/myCV/Experience/The%20Magazine/themagazineBar_avlfu9.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858895/myCV/Experience/The%20Magazine/themagazineRestaurant2_bexgzk.webp",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858895/myCV/Experience/The%20Magazine/themagazineRestaurant_drbykp.webp",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858895/myCV/Experience/The%20Magazine/themagazinewedng_pdtw5n.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684858896/myCV/Experience/The%20Magazine/themagazine_hbgjcz.jpg"
+    ],
+    "tasks": [
+      "Deliver high quality service, having in mind food hygiene and safety procedures.",
+      "Minimize risks focusing on HACCP.",
+      "Create balanced and healthy meals using in season products.",
+      "Cater for special events simultaneously."
+    ],
+    "skills": [
+      "Problem Solving",
+      "Leadership",
+      "Forecast and planning",
+      "Menu Design",
+      "Seasonal adaptability",
+      "Multitasking",
+      "Costumer service",
+      "First Aid"
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:10:50.999Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:10:50.999Z"
+    },
+    "__v": 0
   },
-  "updatedAt": {
-    "$date": "2023-07-06T14:10:12.684Z"
+  {
+    "_id": {
+      "$oid": "64a6cb800e3976df2b2c2beb"
+    },
+    "company": "Roctopus Dive",
+    "location": "Koh Tao, Thailand",
+    "position": "Dive Instructor",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684929769/myCV/Experience/Roctopus%20Dive/roctoLogo_fz46zd.jpg",
+    "startDate": "January 2018",
+    "endDate": "August 2020",
+    "photos": [
+      "https://res.cloudinary.com/datglss57/image/upload/v1684928285/myCV/Experience/Roctopus%20Dive/roctoShop2_lyxvhq.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684923868/myCV/Experience/Roctopus%20Dive/roctoKohNang_ffpzrm.webp",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684923868/myCV/Experience/Roctopus%20Dive/roctoBoat_qofyb3.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctoWhaleshark_q6qevv.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctoStudents_emjmtw.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctoTurtle_c7r8sj.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctowater_mayuyb.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684928285/myCV/Experience/Roctopus%20Dive/roctoBeach_osuhzq.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684928285/myCV/Experience/Roctopus%20Dive/roctoShopo_jqkq6m.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctowater2_l7pwxp.jpg",
+      "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctoStudents_h0pecs.webp"
+    ],
+    "tasks": [
+      "Create a costumizable costumer service.",
+      "Conduct groups/individuals underwater with attention to all safety regulations.",
+      "Achieve, for several months a row, the title of instructor of the month due to the diligent, entertained and well organized work.",
+      "Listen to costumers insecurities and instil a calm environment, by reinforcing support and costumized trainning",
+      "Train and certify students to become certified divers.",
+      "Lead and inspire divemasters by using a focused and passioned mindset."
+    ],
+    "skills": [
+      "Team management",
+      "Coordinate groups",
+      "Leadership",
+      "Forecast and planning",
+      "Safety assurance",
+      "High risk diving work",
+      "Costumer service",
+      "First Aid"
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:11:12.540Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:11:12.540Z"
+    },
+    "__v": 0
   },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6cb500e3976df2b2c2be5"
-  },
-  "company": "The London Edition Hotel",
-  "location": "London, England",
-  "position": "Demi Chef",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684930508/myCV/Experience/Edition%20London/Edition_p49krl.png",
-  "startDate": "August 2013",
-  "endDate": "November 2013",
-  "photos": [
-    "https://res.cloudinary.com/datglss57/image/upload/v1684857186/myCV/Experience/Edition%20London/EditionHotelEntrance2_eofcse.png",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684857185/myCV/Experience/Edition%20London/editionHotelBernersTavern_p7f7hw.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684857185/myCV/Experience/Edition%20London/editionHotelBernersTavern2_rjeska.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684857185/myCV/Experience/Edition%20London/editionHotelSmoking_bcccmh.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684857185/myCV/Experience/Edition%20London/editionhotelentrance_q0diwj.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684857186/myCV/Experience/Edition%20London/editionhotelTerrace_fcrbs9.jpg"
-  ],
-  "tasks": [
-    "Deliver high quality service, having in mind food hygiene and safety procedures.",
-    "Minimize risks focusing on HACCP.",
-    "Create balanced and healthy meals using in season products."
-  ],
-  "skills": [
-    "Forecast and planning",
-    "Research",
-    "Seasonal adaptability",
-    "Multitasking",
-    "Costumer service"
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:10:24.061Z"
-  },
-  "updatedAt": {
-    "$date": "2023-07-06T14:10:24.061Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6cb5d0e3976df2b2c2be7"
-  },
-  "company": "One Aldwych",
-  "location": "London, England",
-  "position": "Chef de Partie",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684940829/myCV/Experience/One%20Aldwych/oneAldwych_i6gg4f.webp",
-  "startDate": "October 2013",
-  "endDate": "June 2017",
-  "photos": [
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychHotel2_woc9u4.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychLobby_yjtl59.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychIndigo_rajypw.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychAT2_yzu3vo.webp",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychAT_grxfn7.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858130/myCV/Experience/One%20Aldwych/oneAldwychHotel_bx4q50.webp"
-  ],
-  "tasks": [
-    "Deliver high quality service, having in mind food hygiene and safety procedures.",
-    "Minimize risks focusing on HACCP.",
-    "Create balanced and healthy meals using in season products.",
-    "Cater for both restaurant and Hotel events simultaneously."
-  ],
-  "skills": [
-    "Team management",
-    "Problem Solving",
-    "Leadership",
-    "Team Building",
-    "Forecast and planning",
-    "Menu Design",
-    "Research",
-    "Seasonal adaptability",
-    "Budgeting",
-    "Multitasking",
-    "Costumer service",
-    "Ordering",
-    "First Aid"
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:10:37.980Z"
-  },
-  "updatedAt": {
-    "$date": "2023-07-06T14:10:37.980Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6cb6a0e3976df2b2c2be9"
-  },
-  "company": "The Magazine",
-  "location": "London, England",
-  "position": "Chef de Partie",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684941144/myCV/Experience/The%20Magazine/TheMagazine_g3hblb.png",
-  "startDate": "May 2016",
-  "endDate": "June 2017",
-  "photos": [
-    "https://res.cloudinary.com/datglss57/image/upload/v1684927239/myCV/Experience/The%20Magazine/themagazine2_oroltj.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858896/myCV/Experience/The%20Magazine/themagazineBar_avlfu9.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858895/myCV/Experience/The%20Magazine/themagazineRestaurant2_bexgzk.webp",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858895/myCV/Experience/The%20Magazine/themagazineRestaurant_drbykp.webp",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858895/myCV/Experience/The%20Magazine/themagazinewedng_pdtw5n.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684858896/myCV/Experience/The%20Magazine/themagazine_hbgjcz.jpg"
-  ],
-  "tasks": [
-    "Deliver high quality service, having in mind food hygiene and safety procedures.",
-    "Minimize risks focusing on HACCP.",
-    "Create balanced and healthy meals using in season products.",
-    "Cater for special events simultaneously."
-  ],
-  "skills": [
-    "Problem Solving",
-    "Leadership",
-    "Forecast and planning",
-    "Menu Design",
-    "Seasonal adaptability",
-    "Multitasking",
-    "Costumer service",
-    "First Aid"
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:10:50.999Z"
-  },
-  "updatedAt": {
-    "$date": "2023-07-06T14:10:50.999Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6cb800e3976df2b2c2beb"
-  },
-  "company": "Roctopus Dive",
-  "location": "Koh Tao, Thailand",
-  "position": "Dive Instructor",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684929769/myCV/Experience/Roctopus%20Dive/roctoLogo_fz46zd.jpg",
-  "startDate": "January 2018",
-  "endDate": "August 2020",
-  "photos": [
-    "https://res.cloudinary.com/datglss57/image/upload/v1684928285/myCV/Experience/Roctopus%20Dive/roctoShop2_lyxvhq.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684923868/myCV/Experience/Roctopus%20Dive/roctoKohNang_ffpzrm.webp",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684923868/myCV/Experience/Roctopus%20Dive/roctoBoat_qofyb3.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctoWhaleshark_q6qevv.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctoStudents_emjmtw.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctoTurtle_c7r8sj.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctowater_mayuyb.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684928285/myCV/Experience/Roctopus%20Dive/roctoBeach_osuhzq.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684928285/myCV/Experience/Roctopus%20Dive/roctoShopo_jqkq6m.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctowater2_l7pwxp.jpg",
-    "https://res.cloudinary.com/datglss57/image/upload/v1684923867/myCV/Experience/Roctopus%20Dive/roctoStudents_h0pecs.webp"
-  ],
-  "tasks": [
-    "Create a costumizable costumer service.",
-    "Conduct groups/individuals underwater with attention to all safety regulations.",
-    "Achieve, for several months a row, the title of instructor of the month due to the diligent, entertained and well organized work.",
-    "Listen to costumers insecurities and instil a calm environment, by reinforcing support and costumized trainning",
-    "Train and certify students to become certified divers.",
-    "Lead and inspire divemasters by using a focused and passioned mindset."
-  ],
-  "skills": [
-    "Team management",
-    "Coordinate groups",
-    "Leadership",
-    "Forecast and planning",
-    "Safety assurance",
-    "High risk diving work",
-    "Costumer service",
-    "First Aid"
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:11:12.540Z"
-  },
-  "updatedAt": {
-    "$date": "2023-07-06T14:11:12.540Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6cb8b0e3976df2b2c2bed"
-  },
-  "company": "Habinterior",
-  "location": "Lisbon, Portugal",
-  "position": "Contractor",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684941535/myCV/Experience/Habinterior/habinterior_cqn4m7.png",
-  "startDate": "August 2020",
-  "endDate": "March 2023",
-  "photos": [],
-  "tasks": [
-    "Handle time and team management so the project deadline is met.",
-    "Coordinate work between diferent departments to avoid overlap between team work.",
-    "Plan day to day work with great attention to detail."
-  ],
-  "skills": [
-    "Team management",
-    "Costumer service"
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:11:23.080Z"
-  },
-  "updatedAt": {
-    "$date": "2023-07-06T14:11:23.080Z"
-  },
-  "__v": 0
-}]
+  {
+    "_id": {
+      "$oid": "64a6cb8b0e3976df2b2c2bed"
+    },
+    "company": "Habinterior",
+    "location": "Lisbon, Portugal",
+    "position": "Contractor",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1684941535/myCV/Experience/Habinterior/habinterior_cqn4m7.png",
+    "startDate": "August 2020",
+    "endDate": "March 2023",
+    "photos": [],
+    "tasks": [
+      "Handle time and team management so the project deadline is met.",
+      "Coordinate work between diferent departments to avoid overlap between team work.",
+      "Plan day to day work with great attention to detail."
+    ],
+    "skills": ["Team management", "Costumer service"],
+    "createdAt": {
+      "$date": "2023-07-06T14:11:23.080Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:11:23.080Z"
+    },
+    "__v": 0
+  }
+]
