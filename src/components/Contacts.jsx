@@ -39,7 +39,7 @@ function Contacts({ contacts }) {
   };
 
   useEffect(() => {
-    console.log(contacts);
+    /* console.log(contacts); */
   }, []);
 
   return (
