@@ -111,10 +111,10 @@ function MenuBox({
                 <NavLink
                   className="menuName"
                   to={
-                      title === "What do you want to know about?"
-                        ? `/`
-                        : `${title.toLowerCase()}`
-                    }
+                    title === "What do you want to know about?"
+                      ? `/`
+                      : `${title.toLowerCase()}`
+                  }
                   onClick={() => {
                     setToggleMenu(false),
                       setShowTitle(false),
@@ -126,7 +126,6 @@ function MenuBox({
                     }
                   }}
                 >
-                  
                   <br />
                   {title}
                 </NavLink>
