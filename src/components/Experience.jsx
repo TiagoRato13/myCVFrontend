@@ -10,7 +10,9 @@ function Experience() {
   /* const [experience, setExperience] = useState([]); */
   const [visiblePhotos, setVisiblePhotos] = useState(photos);
   const selectedExperienceRef = useRef(null);
-  const [jsonExperience, setJsonExperience] = useState(experience);
+  const [jsonExperience, setJsonExperience] = useState(
+    [...experience].reverse()
+  );
   /* const getExperience = async () => {
     try {
       const response = await projectService.getExperience();

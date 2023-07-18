@@ -8,7 +8,7 @@ import Title from "./Title";
 
 function Projects() {
   /* const [projects, setProjects] = useState([]); */
-  const [jsonProjects, setJsonProjects] = useState(projects);
+  const [jsonProjects, setJsonProjects] = useState([...projects].reverse());
   /* const getProject = async () => {
     try {
       const response = await projectService.getProject();
@@ -48,14 +48,26 @@ function Projects() {
                   );
                 })}
               </p>
-              <NavLink
-                to={project.link}
-                className="tech-link"
-                target="_blank"
-                key={projectId}
-              >
-                {">>>"} Click here to check project {"<<<"}
-              </NavLink>
+
+              {project.name === "Tiago Rato CV/Portfolio" ? (
+                <NavLink
+                  to={project.link}
+                  className="tech-link"
+                  target="_blank"
+                  key={projectId}
+                >
+                  {">>>"} Click here for inception {"<<<"}
+                </NavLink>
+              ) : (
+                <NavLink
+                  to={project.link}
+                  className="tech-link"
+                  target="_blank"
+                  key={projectId}
+                >
+                  {">>>"} Click here to check project {"<<<"}
+                </NavLink>
+              )}
             </div>
           );
         })}
