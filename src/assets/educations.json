@@ -102,4 +102,62 @@
     "$date": "2023-07-06T14:12:57.032Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b7d8e5eccdd4343c36ee02"
+  },
+  "schoolName": "Escola Superior de Hotelaria e Turismo do Estoril",
+  "schoolImage": "https://res.cloudinary.com/datglss57/image/upload/v1689770010/myCV/Education/3-8215_fymuw4.jpg",
+  "startDate": "September 2007",
+  "endDate": "June 2010",
+  "project": [
+    {
+      "name": "N/A",
+      "link": "N/A",
+      "image": "N/A",
+      "technology": [
+        "N/A"
+      ],
+      "_id": {
+        "$oid": "64b7d8e5eccdd4343c36ee03"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-07-19T12:36:53.956Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-19T12:36:53.956Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b7d912eccdd4343c36ee05"
+  },
+  "schoolName": "Escola de Hotelaria e Turismo do Estoril",
+  "schoolImage": "https://res.cloudinary.com/datglss57/image/upload/v1689770010/myCV/Education/EHTE_dq8zn6.jpg",
+  "startDate": "September 2004",
+  "endDate": "June 2007",
+  "project": [
+    {
+      "name": "N/A",
+      "link": "N/A",
+      "image": "N/A",
+      "technology": [
+        "N/A"
+      ],
+      "_id": {
+        "$oid": "64b7d912eccdd4343c36ee06"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-07-19T12:37:38.904Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-19T12:37:38.904Z"
+  },
+  "__v": 0
 }]

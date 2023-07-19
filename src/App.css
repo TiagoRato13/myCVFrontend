@@ -52,7 +52,7 @@ body {
   transform: rotate(360deg);
   top: 30vh;
   left: 5vw;
-  transition: 1.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 
 .toggle {
@@ -368,36 +368,6 @@ body {
 
 .education-schoolImage {
   width: 5vw;
-}
-
-.projects-separator {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: rgb(6, 75, 90);
-}
-
-.education-projects {
-  gap: 2vw;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.education-school {
-  display: inline-flex;
-}
-
-.separator {
-  margin-bottom: 4vh;
-  text-align: center;
-  width: 28vw;
-  padding: 0 4vh;
-}
-
-.separator-vert {
-  width: 1px;
-  border-right: 1px solid #064b5a;
-  margin: 10vh 0;
 }
 
 .project-link {

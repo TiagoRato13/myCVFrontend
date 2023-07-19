@@ -77,7 +77,7 @@ function MenuBox({
               }}
               onMouseOver={() => handleMouseOver("Experience")}
             >
-              <NavLink to="experience">Experience</NavLink>
+              <NavLink to="experience">Previous Experience</NavLink>
             </li>
 
             <li

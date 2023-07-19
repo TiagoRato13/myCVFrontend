@@ -1,121 +1,114 @@
-[{
-  "_id": {
-    "$oid": "64a6c94e0e3976df2b2c2bc2"
+[
+  {
+    "_id": {
+      "$oid": "64a6c94e0e3976df2b2c2bc2"
+    },
+    "name": "Dogs",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687434824/myCV/Interests/Dogs/20210506_193330_vhhck8.jpg",
+    "aditionalInfo": [
+      "By connecting with dogs, I've learned to be empathetic and kind, taking on the responsibility of their care.",
+      "Their loyalty has taught me to be devoted and steadfast in relationships.Through training and understanding, I've developed patience, and their protective nature has instilled in me a sense of safeguarding others. "
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:01:50.338Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:05:00.061Z"
+    },
+    "__v": 0
   },
-  "name": "Dogs",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687434824/myCV/Interests/Dogs/20210506_193330_vhhck8.jpg",
-  "aditionalInfo": [
-    "My interest in dogs has helped me develop essential skills such as compassion, responsibility, loyalty, patience, and protection.",
-    "By connecting with dogs, I've learned to be empathetic and kind, taking on the responsibility of their care. Their loyalty has taught me to be devoted and steadfast in relationships.Through training and understanding, I've developed patience, and their protective nature has instilled in me a sense of safeguarding others. ",
-    "Overall, my passion for dogs has shaped me into a more compassionate, responsible, loyal, patient, and protective individual."
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:01:50.338Z"
+  {
+    "_id": {
+      "$oid": "64a6c9580e3976df2b2c2bc4"
+    },
+    "name": "Board games",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687864850/myCV/Interests/Board%20Games/IMG-20230305-WA0010_t83qwm.jpg",
+    "aditionalInfo": [
+      "Engaging in board games hones my ability to effectively convey strategies, connect with others, and negotiate. It sharpens my critical thinking skills, allowing me to analyze game states, evaluate options, and anticipate consequences.",
+      " Collaborative games emphasize teamwork, fostering my collaborative skills and teaching me to listen and find synergies. Board games also enhance problem-solving abilities, encouraging creative and analytical thinking."
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:02:00.563Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:02:00.563Z"
+    },
+    "__v": 0
   },
-  "updatedAt": {
-    "$date": "2023-07-06T14:05:00.061Z"
+  {
+    "_id": {
+      "$oid": "64a6c9630e3976df2b2c2bc6"
+    },
+    "name": "Scuba Diving",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687791843/myCV/Interests/Scuba%20Dive/DSC01222_vlwv8d.jpg",
+    "aditionalInfo": [
+      "Through diving, I have embraced responsibility in safety protocols and equipment checks ingrained in the diving culture and the importance of meticulous preparation and attention to detail.",
+      "I have become an advocate for conservation and sustainable practices both in and out of the water as the fragility of the underwater ecosystem nurtures a deep sense of environmental awareness within me.",
+      "Diving also hones my organizational skills as I meticulously plan dive trips, manage gear, and navigate complex dive sites.",
+      "The diving community provides me with opportunities for leadership, whether it's leading dive groups, participating in rescue scenarios, or sharing knowledge with fellow divers."
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:02:11.986Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:02:11.986Z"
+    },
+    "__v": 0
   },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6c9580e3976df2b2c2bc4"
+  {
+    "_id": {
+      "$oid": "64a6c96e0e3976df2b2c2bc8"
+    },
+    "name": "Music",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687864895/myCV/Interests/Music/FB_IMG_1611080965532_rre37e.jpg",
+    "aditionalInfo": [
+      "Through music, I have learned the value of concentration, which allowed me to convey and explore a wide range of feelings, fostering emotional intelligence and self-awareness.",
+      "Furthermore, music has nurtured my empathy by enabling me to connect with the emotions and experiences conveyed by different compositions.",
+      "Music fuels my creativity, encouraging me to think outside the box, explore new possibilities, and express myself in unique ways."
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:02:22.481Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:02:22.481Z"
+    },
+    "__v": 0
   },
-  "name": "Board games",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687864850/myCV/Interests/Board%20Games/IMG-20230305-WA0010_t83qwm.jpg",
-  "aditionalInfo": [
-    "My passion for board games has nurtured essential skills such as communication, social interaction, critical thinking, collaboration, and problem-solving.",
-    "Engaging in board games hones my ability to effectively convey strategies, connect with others, and negotiate. It sharpens my critical thinking skills, allowing me to analyze game states, evaluate options, and anticipate consequences.",
-    " Collaborative games emphasize teamwork, fostering my collaborative skills and teaching me to listen and find synergies. Board games also enhance problem-solving abilities, encouraging creative and analytical thinking.",
-    "Overall, my interest in board games has shaped me into a better communicator, socially adept, critical thinker, collaborator, and problem solver."
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:02:00.563Z"
+  {
+    "_id": {
+      "$oid": "64a6c9780e3976df2b2c2bca"
+    },
+    "name": "Travel",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687796819/myCV/Interests/Travel/viagem_tailandia_flv6yc.jpg",
+    "aditionalInfo": [
+      "Through my travels, I have cultivated a strong sense of autonomy, as navigating new environments, planning itineraries, and making independent decisions have become second nature.",
+      "It also fosters adaptability, as I encounter diverse cultures, customs, and languages. Exploring different places has expanded my perspective, allowing me to appreciate the beauty of diversity and gain a deeper understanding of the world and its people.",
+      "I have built resilience, learning to overcome obstacles, handle unexpected challenges, and thrive outside my comfort zone."
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:02:32.305Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:02:32.305Z"
+    },
+    "__v": 0
   },
-  "updatedAt": {
-    "$date": "2023-07-06T14:02:00.563Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6c9630e3976df2b2c2bc6"
-  },
-  "name": "Scuba Diving",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687791843/myCV/Interests/Scuba%20Dive/DSC01222_vlwv8d.jpg",
-  "aditionalInfo": [
-    "My passion for scuba diving has been instrumental in the development of key skills that have positively impacted my life.",
-    "Through scuba diving, I have embraced responsibility in numerous ways. The safety protocols and equipment checks ingrained in the diving culture have taught me the importance of meticulous preparation and attentiveness to detail.",
-    "Furthermore, the fragility of the underwater ecosystem has nurtured a deep sense of environmental awareness within me. By witnessing the beauty and vulnerability of marine life firsthand, I have become an advocate for conservation and sustainable practices both in and out of the water.",
-    "Scuba diving has also honed my organizational skills as I meticulously plan dive trips, manage gear, and navigate complex dive sites.",
-    "Lastly, the diving community has provided me with opportunities for leadership, whether it's leading dive groups, participating in rescue scenarios, or sharing knowledge with fellow divers.",
-    "Overall, my interest in scuba diving has fostered responsibility, mindfulness, environmental awareness, organization, and leadership, enriching my life both underwater and on land."
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:02:11.986Z"
-  },
-  "updatedAt": {
-    "$date": "2023-07-06T14:02:11.986Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6c96e0e3976df2b2c2bc8"
-  },
-  "name": "Music",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687864895/myCV/Interests/Music/FB_IMG_1611080965532_rre37e.jpg",
-  "aditionalInfo": [
-    "My passion for music has played a transformative role in the development of crucial skills that have enriched my life in profound ways. Engaging with music requires discipline, as regular practice and dedication are essential for growth and mastery. ",
-    "Through music, I have learned the value of concentration, as immersing myself in the melodies and rhythms demands focused attention. Music is a powerful medium for emotional expression, which allowed me to convey and explore a wide range of feelings, fostering emotional intelligence and self-awareness.",
-    "Furthermore, music has nurtured my empathy by enabling me to connect with the emotions and experiences conveyed by different compositions, fostering a deeper understanding of others.",
-    "Lastly, music fuels my creativity, encouraging me to think outside the box, explore new possibilities, and express myself in unique ways. In sum, my interest in music has cultivated discipline, concentration, emotional expression, empathy, and creativity, enhancing my personal and interpersonal growth."
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:02:22.481Z"
-  },
-  "updatedAt": {
-    "$date": "2023-07-06T14:02:22.481Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6c9780e3976df2b2c2bca"
-  },
-  "name": "Travel",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687796819/myCV/Interests/Travel/viagem_tailandia_flv6yc.jpg",
-  "aditionalInfo": [
-    "Through my travels, I have cultivated a strong sense of autonomy, as navigating new environments, planning itineraries, and making independent decisions have become second nature.",
-    "Traveling has also fostered adaptability, as I encounter diverse cultures, customs, and languages, requiring me to adjust and embrace unfamiliar situations. Moreover, exploring different places has expanded my perspective, allowing me to appreciate the beauty of diversity and gain a deeper understanding of the world and its people.",
-    "Along the way, I have built resilience, learning to overcome obstacles, handle unexpected challenges, and thrive outside my comfort zone. Importantly, traveling has nurtured empathy by exposing me to different lifestyles and perspectives, fostering compassion and understanding for people from all walks of life.",
-    "In essence, my interest in traveling has empowered me with autonomy, adaptability, perspective, resilience, and empathy, shaping me into a more well-rounded and open-minded individual."
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:02:32.305Z"
-  },
-  "updatedAt": {
-    "$date": "2023-07-06T14:02:32.305Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64a6c9830e3976df2b2c2bcc"
-  },
-  "name": "Paint",
-  "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687433200/myCV/Interests/Painting/20230622_115003_ys56jp.jpg",
-  "aditionalInfo": [
-    "Engaging in painting nurtures my creativity, as I explore different techniques, colors, and subjects, allowing my imagination to flourish.",
-    "The process of painting requires focus, as I immerse myself in the artistic process, paying attention to details and intricacies. Moreover, painting has taught me persistence, as I embrace the challenges that arise and strive to improve with each stroke, understanding that progress takes time.",
-    "Beyond the artistic aspect, painting serves as a source of relaxation, offering a meditative and therapeutic outlet where I can express myself and find solace.",
-    "Overall, my interest in painting has fostered creativity, focus, persistence, and relaxation, enhancing my overall well-being and providing a fulfilling avenue for self-expression."
-  ],
-  "createdAt": {
-    "$date": "2023-07-06T14:02:43.615Z"
-  },
-  "updatedAt": {
-    "$date": "2023-07-06T14:05:42.932Z"
-  },
-  "__v": 0
-}]
+  {
+    "_id": {
+      "$oid": "64a6c9830e3976df2b2c2bcc"
+    },
+    "name": "Paint",
+    "picture": "https://res.cloudinary.com/datglss57/image/upload/v1687433200/myCV/Interests/Painting/20230622_115003_ys56jp.jpg",
+    "aditionalInfo": [
+      "Engaging in painting nurtures my creativity, as I immerse myself in the artistic process, paying attention to details and intricacies. Moreover, painting has taught me persistence, as I embrace the challenges that arise and strive to improve with each stroke, understanding that progress takes time.",
+      "Beyond the artistic aspect, painting serves as a source of relaxation, offering a meditative and therapeutic outlet where I can express myself and find solace."
+    ],
+    "createdAt": {
+      "$date": "2023-07-06T14:02:43.615Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-06T14:05:42.932Z"
+    },
+    "__v": 0
+  }
+]
